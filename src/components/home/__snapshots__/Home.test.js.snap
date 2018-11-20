@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders Home 1`] = `
+<main>
+  <h3>
+     A Super Fun Parking Lot
+  </h3>
+  <p>
+    This app allows us to search through a parking lot!
+  </p>
+</main>
+`;
