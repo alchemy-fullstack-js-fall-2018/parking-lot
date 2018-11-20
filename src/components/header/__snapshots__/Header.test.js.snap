@@ -1,15 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders a Header 1`] = `
-<header>
-  <h1>
-    Fun Parking Lot App
-  </h1>
-  <Link
-    replace={false}
-    to="/"
+<header
+  className="header"
+>
+  <div
+    className="logo"
   >
-    Home
-  </Link>
+    <h3>
+      Fun Parking Lot App
+    </h3>
+  </div>
+  <div
+    className="links"
+  >
+    <Link
+      className="link"
+      replace={false}
+      to="/"
+    >
+      Home
+    </Link>
+  </div>
 </header>
 `;

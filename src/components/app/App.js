@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from '../header/Header';
 import  ROUTES  from '../../routes';
+import 'normalize.css';
 
 export default function App() {
   return (
