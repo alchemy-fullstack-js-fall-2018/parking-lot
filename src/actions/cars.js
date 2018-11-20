@@ -1,0 +1,2 @@
+export const REGISTER_CARS = 'REGISTER_CARS';
+
