@@ -1,6 +1,11 @@
 import React, { PureComponent, Fragment } from 'react';
+import PropTypes from 'prop-types';
 
 export default class RegisterCarForm extends PureComponent {
+
+  static propTypes = {
+    registerCar: PropTypes.func
+  };
 
   state = {
     make: 'Toyota',
@@ -10,10 +15,11 @@ export default class RegisterCarForm extends PureComponent {
 
   handleChange = ({ target }) => {
     this.setState({ [target.name]: target.value });
-  }
+  };
 
   render() {
-
+    const { registerCar } = this.props;
+    const { make, model, plate } = this.state;
 
     return (
       <Fragment>
@@ -28,7 +34,7 @@ export default class RegisterCarForm extends PureComponent {
           <label htmlFor='plate'>Plate Info</label>
           <input id='plate' type='text' name='plate' onChange={this.handleChange}/>
 
-          <button onClick={this.handleSubmit}>Register</button>
+          <button onClick={() => registerCar(make, model, plate)}>Register</button>
         </form>
       </Fragment>
     );
