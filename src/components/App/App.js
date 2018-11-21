@@ -12,8 +12,7 @@ export default function App() {
       <h1>Parking Lot</h1>
       <Router>
         <Switch>
-          {/* <Route component={ROUTES.TRANSACTIONS.Component} path={ROUTES.TRANSACTIONS.path} />
-          <Route component={ROUTES.ALL_PIZZA.Component} path={ROUTES.ALL_PIZZA.path} /> */}
+          <Route component={ROUTES.CARS.Component} path={ROUTES.CARS.path} />
         </Switch>
       </Router>
     </Fragment>

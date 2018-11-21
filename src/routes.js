@@ -1,14 +1,9 @@
-// import AllPizzas from './containers/pizza/AllPizzas';
-// import AllTransactions from './containers/transactions/AllTransactions';
-// export default {
-//   ALL_PIZZA: {
-//     path: '/',
-//     Component: AllPizzas,
-//     linkTo: () => '/'
-//   },
-//   TRANSACTIONS: {
-//     path: '/transactions',
-//     Component: AllTransactions,
-//     linkTo: () => '/transactions'
-//   }
-// };
+import AllCars from './containers/cars/AllCars';
+
+export default {
+  CARS: {
+    path: '/cars',
+    Component: AllCars,
+    linkTo: () => '/cars'
+  }
+};
