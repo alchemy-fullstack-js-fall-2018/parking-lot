@@ -1,16 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Cars renders Cars 1`] = `
-<Fragment>
-  <div
-    className="container"
-  >
-    <Car
-      key="a plate"
-      make="a make"
-      model="a model"
-      plate="a plate"
-    />
-  </div>
-</Fragment>
+<div
+  className="container"
+>
+  <Car
+    key="a plate"
+    make="a make"
+    model="a model"
+    plate="a plate"
+  />
+</div>
 `;

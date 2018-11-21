@@ -1,3 +1,7 @@
 export const getCars = state => {
-  return Object.values(state.cars);
+  console.log(state.cars.list);
+  return Object.keys(state.cars.list).map(key => ({
+    key,
+    ...state.cars.list[key]
+  }));
 };

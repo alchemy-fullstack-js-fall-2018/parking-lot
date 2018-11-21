@@ -1,4 +1,5 @@
 export const REGISTER_CARS = 'REGISTER_CARS';
+export const CAR_UPDATE_CAR_SEARCH_TERM = 'CAR_UPDATE_CAR_SEARCH_TERM';
 
 export const registerCars = (make, model, plate) => {
   return {
@@ -8,5 +9,12 @@ export const registerCars = (make, model, plate) => {
       model,
       plate,
     }
+  };
+};
+
+export const carUpdateCarSearchTerm = searchTerm => {
+  return {
+    type: CAR_UPDATE_CAR_SEARCH_TERM,
+    payload: searchTerm
   };
 };
