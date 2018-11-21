@@ -8,7 +8,7 @@ export default class RegisterCarForm extends PureComponent {
   };
 
   state = {
-    make: 'Toyota',
+    make: '',
     model: '',
     plate: ''
   };
@@ -17,9 +17,16 @@ export default class RegisterCarForm extends PureComponent {
     this.setState({ [target.name]: target.value });
   };
 
-  render() {
+  onSubmit = event => {
     const { registerCar } = this.props;
+    console.log(this.props)
     const { make, model, plate } = this.state;
+    event.preventDefault();
+    registerCar(make, model, plate);
+  };
+
+  render() {
+
 
     return (
       <Fragment>
@@ -34,7 +41,7 @@ export default class RegisterCarForm extends PureComponent {
           <label htmlFor='plate'>Plate Info</label>
           <input id='plate' type='text' name='plate' onChange={this.handleChange}/>
 
-          <button onClick={() => registerCar(make, model, plate)}>Register</button>
+          <button onClick={this.onSubmit}>Register</button>
         </form>
       </Fragment>
     );

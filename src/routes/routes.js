@@ -1,5 +1,5 @@
 import Home from '../components/home/Home';
-import RegisterCarForm from '../components/registerCarForm/RegisterCarForm';
+import RegisterCarContainer from '../containers/car/RegisterCarContainer';
 
 export const ROUTES = {
   HOME: {
@@ -9,7 +9,7 @@ export const ROUTES = {
   },
   REGISTER: {
     path: '/cars/register',
-    Component: RegisterCarForm,
+    Component: RegisterCarContainer,
     linkTo: () => '/cars/register'
   }
 };

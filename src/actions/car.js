@@ -1,4 +1,4 @@
-const REGISTER_CAR = 'REGISTER_CAR';
+export const REGISTER_CAR = 'REGISTER_CAR';
 export const registerCar = (make, model, plate) => {
   return {
     type: REGISTER_CAR,
