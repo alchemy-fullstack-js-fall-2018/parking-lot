@@ -4,6 +4,7 @@
 
 * `/` Home page
 * `/cars` List all registered cars
+* `/cars/:id` Details about a car
 * `/cars/search` Display cars. Filter by search term (input plate)
 * `/cars/create` Create a new car
 * `/lot` List all cars in the parking lot
@@ -45,9 +46,9 @@
 
 * `CarDetailContainer.js`
   * Container
-  * maps a car to the `Car` component
-  * maps `LOT_CAR_ARRIVED` to the `Car` component
-  * maps `LOT_CAR_DEPARTED` to the `Car` component
+  * maps a car to the `CarDetail` component
+  * maps `LOT_CAR_ARRIVED` to the `CarDetail` component
+  * maps `LOT_CAR_DEPARTED` to the `CarDetail` component
 * `RegisterCarContainer.js`
   * Container
   * maps `REGISTER_CAR` to the `RegisterCarForm` component
