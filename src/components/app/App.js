@@ -10,6 +10,7 @@ export default function App() {
       <Fragment>
         <Header />
         <Switch>
+          <Route component={ROUTES.ALL_CARS.Component} path={ROUTES.ALL_CARS.path}/>
           <Route component={ROUTES.HOME.Component} path={ROUTES.HOME.path} />
         </Switch>
       </Fragment>
