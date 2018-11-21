@@ -19,7 +19,6 @@ export default class RegisterCarForm extends PureComponent {
 
   onSubmit = event => {
     const { registerCar } = this.props;
-    console.log(this.props)
     const { make, model, plate } = this.state;
     event.preventDefault();
     registerCar(make, model, plate);

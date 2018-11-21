@@ -12,7 +12,7 @@ describe('Header component', () => {
   it('Has a title and a nav with three links', () => {
     const wrapper = shallow(<Header />);
     expect(wrapper.html()).toContain('<h1>');
-    expect(wrapper.html()).toContain('<nav>')
+    expect(wrapper.html()).toContain('<nav>');
     expect(wrapper.find('a')).toHaveLength(3);
   });
 });
