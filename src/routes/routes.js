@@ -16,24 +16,24 @@ export const ROUTES = {
     Component: AllCars,
     linkTo: () => '/cars'
   },
-  SEARCH_CARS: { //third
-    path: '/cars/search',
-    Component: SearchAllCarsContainer,
-    linkTo: () => '/cars/search'
-  },
-  CREATE_CAR: { //second
-    path: '/cars/create',
-    Component: RegisterCarContainer,
-    linkTo: () => '/cars/create'
-  },
-  LOT: { //fourth -- also just drawing from the store
-    path: '/lot',
-    Component: LotCars,
-    linkTo: () => '/lot'
-  },
-  SEARCH_LOT: { //fifth
-    path: '/lot/search',
-    Component: SearchLotCarsContainer,
-    linkTo: () => '/lot/search'
-  }
+  // SEARCH_CARS: { //third
+  //   path: '/cars/search',
+  //   Component: SearchAllCarsContainer,
+  //   linkTo: () => '/cars/search'
+  // },
+  // CREATE_CAR: { //second
+  //   path: '/cars/create',
+  //   Component: RegisterCarContainer,
+  //   linkTo: () => '/cars/create'
+  // },
+  // LOT: { //fourth -- also just drawing from the store
+  //   path: '/lot',
+  //   Component: LotCars,
+  //   linkTo: () => '/lot'
+  // },
+  // SEARCH_LOT: { //fifth
+  //   path: '/lot/search',
+  //   Component: SearchLotCarsContainer,
+  //   linkTo: () => '/lot/search'
+  // }
 };
