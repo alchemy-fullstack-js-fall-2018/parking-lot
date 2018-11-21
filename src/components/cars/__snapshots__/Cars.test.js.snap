@@ -6,7 +6,7 @@ exports[`Cars renders Cars 1`] = `
     className="container"
   >
     <Car
-      key="a model"
+      key="a plate"
       make="a make"
       model="a model"
       plate="a plate"

@@ -18,7 +18,7 @@ export default function Cars({ cars }) {
   return (
     <Fragment>
       <div className={styles.container}>
-        {cars.map(car => <Car key={car.model} make={car.make} model={car.model} plate={car.plate}/>)}
+        {cars.map(car => <Car key={car.plate} make={car.make} model={car.model} plate={car.plate}/>)}
       </div>
     </Fragment>
   );

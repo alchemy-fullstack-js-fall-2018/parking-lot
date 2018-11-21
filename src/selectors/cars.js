@@ -1,3 +1,3 @@
 export const getCars = state => {
-  return [...state.cars];
+  return Object.values(state.cars);
 };
