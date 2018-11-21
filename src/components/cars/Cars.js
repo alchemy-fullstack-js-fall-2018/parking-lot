@@ -1,4 +1,5 @@
-import React, { PureComponent, Fragment } from 'react'
+import React, { PureComponent, Fragment } from 'react';
+import Car from './Car';
 import PropTypes from 'prop-types';
 
 export default class Cars extends PureComponent {
@@ -11,11 +12,11 @@ export default class Cars extends PureComponent {
 
     const carsComponents = cars.map(car => {
       return (
-        <li key={car.plate}>
-          <span>{car.make} {car.model}</span>
-          <p>Plate Number: {car.plate}</p>
-
-        </li>
+        <Car key={car.plate}
+          make={car.make}
+          model={car.model}
+          plate={car.plate}
+        />
       );
     });
 
