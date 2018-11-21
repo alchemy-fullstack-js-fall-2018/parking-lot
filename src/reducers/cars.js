@@ -1,5 +1,4 @@
 import { REGISTER_CAR } from '../actions/cars';
-import fakeCars from '../fixtures/fakeCars';
 
 const initialState = {};
 
