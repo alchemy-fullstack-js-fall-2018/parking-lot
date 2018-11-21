@@ -3,8 +3,8 @@ import { REGISTER_CARS } from '../actions/cars';
 
 describe('reducer', () => {
   it('returns the initial state', () => {
-    const newState = reducer([], {});
-    expect(newState).toEqual([]);
+    const newState = reducer({}, {});
+    expect(newState).toEqual({});
   });
 
   it('handles a REGISTER_CARS action', () => {
@@ -19,7 +19,7 @@ describe('reducer', () => {
       payload: car
     };
 
-    const newState = reducer([], action);
-    expect(newState).toContain(car);
+    const newState = reducer({}, action);
+    expect(Object.values(newState)).toContain(car);
   });
 });
