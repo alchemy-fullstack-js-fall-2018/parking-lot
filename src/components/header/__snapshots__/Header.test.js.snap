@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders a Header component 1`] = `
+<div
+  id="header"
+>
+  <h1>
+    Herb's Parking Lot
+  </h1>
+  <nav>
+    <a>
+      Search Cars
+    </a>
+    <a>
+      Search Lots
+    </a>
+    <a>
+      Create Cars
+    </a>
+  </nav>
+</div>
+`;
