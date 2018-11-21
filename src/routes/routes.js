@@ -1,36 +1,37 @@
 import Home from '../components/home/Home';
 import AllCars from '../containers/AllCars';
 import SearchAllCarsContainer from '../containers/SearchAllCarsContainer';
-import Lot from '../containers/LotCars';
+import LotCars from '../containers/LotCars';
+import RegisterCarContainer from '../containers/RegisterCarContainer';
 import SearchLotCarsContainer from '../containers/SearchLotCarsContainer';
 
-export default {
+export const ROUTES = {
   HOME: {
     path: '/',
     Component: Home,
     linkTo: () => '/'
   },
-  ALL_CARS: {
+  ALL_CARS: { //do this slice first. doesn't need an action, just takes fake cars from store
     path: '/cars',
     Component: AllCars,
     linkTo: () => '/cars'
   },
-  SEARCH_CARS: {
+  SEARCH_CARS: { //third
     path: '/cars/search',
     Component: SearchAllCarsContainer,
     linkTo: () => '/cars/search'
   },
-  CREATE_CAR: {
+  CREATE_CAR: { //second
     path: '/cars/create',
-    Component: /*WHICH COMPONENT*/ ,
+    Component: RegisterCarContainer,
     linkTo: () => '/cars/create'
   },
-  LOT: {
+  LOT: { //fourth -- also just drawing from the store
     path: '/lot',
     Component: LotCars,
     linkTo: () => '/lot'
   },
-  SEARCH_LOT: {
+  SEARCH_LOT: { //fifth
     path: '/lot/search',
     Component: SearchLotCarsContainer,
     linkTo: () => '/lot/search'
