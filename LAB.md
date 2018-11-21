@@ -4,6 +4,7 @@
 
 * `/` Home page
 * `/cars` List all registered cars
+* `/cars/:id` Details about a car
 * `/cars/search` Display cars. Filter by search term (input plate)
 * `/cars/create` Create a new car
 * `/lot` List all cars in the parking lot
