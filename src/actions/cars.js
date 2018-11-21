@@ -1,0 +1,4 @@
+export const REGISTER_CAR = 'REGISTER_CAR';
+
+
+export const CAR_UPDATE_SEARCH_TERM = 'CAR_UPDATE_SEARCH_TERM';
