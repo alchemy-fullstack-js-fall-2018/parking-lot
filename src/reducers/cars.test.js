@@ -28,8 +28,8 @@ describe('reducer', () => {
       payload: car
     };
 
-    const newState = reducer({}, action);
-    expect(Object.values(newState)).toContainEqual(car);
+    const newState = reducer(state, action);
+    expect(newState.list['ISUK123']).toEqual(car);
   });
 
   it('handles a CAR_UPDATE_CAR_SEARCH_TERM and updates search term in state', () => {

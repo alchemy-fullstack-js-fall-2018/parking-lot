@@ -1,7 +1,19 @@
 export const getCars = state => {
-  console.log(state.cars.list);
   return Object.keys(state.cars.list).map(key => ({
-    key,
+    plate: key,
     ...state.cars.list[key]
   }));
+};
+
+export const getCarsSearchTerm = state => {
+  return state.cars.searchTerm;
+};
+
+export const getFilteredCars = state => {
+  const searchTerm = getCarsSearchTerm(state);
+  return getCars(state).filter(cars => {
+    return cars.make.includes(searchTerm) ||
+      cars.model.includes(searchTerm) ||
+      cars.plate.includes(searchTerm);
+  });
 };
