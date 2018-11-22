@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Car component matches snapshot 1`] = `
+<Fragment>
+  <tr
+    key="ABC123"
+  >
+    <td>
+      Toyota
+    </td>
+    <td>
+      Corolla
+    </td>
+    <td>
+      ABC123
+    </td>
+  </tr>
+</Fragment>
+`;

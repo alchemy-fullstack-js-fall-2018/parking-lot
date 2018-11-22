@@ -2,17 +2,17 @@
 
 ## Routes
 
-* `/` Home page
-* `/cars` List all registered cars
+XXX* `/` Home page
+XXX* `/cars` List all registered cars
 * `/cars/:id` Details about a car
 * `/cars/search` Display cars. Filter by search term (input plate)
-* `/cars/create` Create a new car
+XXX* `/cars/create` Create a new car
 * `/lot` List all cars in the parking lot
 * `/lot/search` List all cars in the parking lot. Filter by search term
 
 ## Components
 
-* `Header.js`
+XXX* `Header.js`
   * link to `/cars/search`
   * link to `/lot/search`
   * link to `/cars/create`
@@ -21,14 +21,14 @@
   * Display the status of the car (is it in the lot)
   * Display the numbers of times the car has used the lot
   * Display a button to either add the car to a lot or remove it
-* `Car.js`
+XXX* `Car.js`
   * Presentational component
   * Display the make/model/plate of a car
   * Link to `CarDetail`
-* `Cars.js`
+XXX* `Cars.js`
   * Presentational component
   * Display a list of `Car` components
-* `RegisterCarForm.js`
+XXX* `RegisterCarForm.js`
   * Presentational component
   * Form to gather make, model, plate of a car.
   * `onSubmit` calls a function from props
@@ -38,7 +38,7 @@
   * Presentational component
   * text input for search
   * Displays `Cars` list
-* `Home.js`
+XXX* `Home.js`
   * Presentational component
   * Acts as the home page
 
@@ -49,10 +49,10 @@
   * maps a car to the `CarDetail` component
   * maps `LOT_CAR_ARRIVED` to the `CarDetail` component
   * maps `LOT_CAR_DEPARTED` to the `CarDetail` component
-* `RegisterCarContainer.js`
+XXX* `RegisterCarContainer.js`
   * Container
   * maps `REGISTER_CAR` to the `RegisterCarForm` component
-* `AllCars.js`
+*XXX `AllCars.js`
   * Container
   * maps all cars into the `Cars` component
 * `LotCars.js`
@@ -98,7 +98,7 @@
 
 ## Actions
 
-* `REGISTER_CAR`
+XXX* `REGISTER_CAR`
   * Used to create a new car in the state
 * `CAR_UPDATE_CAR_SEARCH_TERM`
   * Used to update the car search term
