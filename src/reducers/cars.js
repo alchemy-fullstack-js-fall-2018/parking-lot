@@ -9,14 +9,17 @@ const initialState = {
     ISUK123: {
       make: 'Ford',
       model: 'Pinto',
+      plate: 'ISUK123'
     },
     FOOKM3: {
       make: 'Plymouth',
       model: 'Prowler',
+      plate: 'FOOKM3'
     },
     OLDMAN: {
       make: 'Cadillac',
       model: 'Deville',
+      plate: 'OLDMAN'
     }
   }
 };
