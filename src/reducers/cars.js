@@ -5,27 +5,30 @@ import {
 } from '../actions/cars';
 
 const initialState = {
-  abc1234: {
-    make: 'Ford',
-    model: 'Pinto',
-    plate: 'abc1234'
-  },
-  def5678: {
-    make: 'Honda',
-    model: 'Civic',
-    plate: 'def5678'
-  },
-  ham4040: {
-    make: 'Subaru',
-    model: 'Outback',
-    plate: 'ham4040'
+  searchTerm: '',
+  list: {
+    abc1234: {
+      make: 'Ford',
+      model: 'Pinto',
+      plate: 'abc1234'
+    },
+    def5678: {
+      make: 'Honda',
+      model: 'Civic',
+      plate: 'def5678'
+    },
+    ham4040: {
+      make: 'Subaru',
+      model: 'Outback',
+      plate: 'ham4040'
+    }
   }
 };
 
-export default function reducer(state = initialState, action) {
-  switch(action.type) {
+export default function reducer(state = initialState, { type, payload }) {
+  switch(type) {
     case REGISTER_CAR:
-      return {};
+      return { ...state, list: { ...state.list, [payload.plate]: payload } };
     case CAR_UPDATE_SEARCH_TERM:
       return {};
     default: return state;

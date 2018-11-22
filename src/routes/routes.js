@@ -1,5 +1,6 @@
 import Home from '../components/home/Home';
 import AllCars from '../containers/AllCars';
+import CarDetailContainer from '../containers/CarDetailContainer'
 import SearchAllCarsContainer from '../containers/SearchAllCarsContainer';
 import LotCars from '../containers/LotCars';
 import RegisterCarContainer from '../containers/RegisterCarContainer';
@@ -16,16 +17,21 @@ export const ROUTES = {
     Component: AllCars,
     linkTo: () => '/cars'
   },
+  // ONE_CAR: {
+  //   path: '/cars/:id',
+  //   Component: CarDetailContainer,
+  //   linkTo: () => '/cars/:id'
+  // },
   // SEARCH_CARS: { //third
   //   path: '/cars/search',
   //   Component: SearchAllCarsContainer,
   //   linkTo: () => '/cars/search'
   // },
-  // CREATE_CAR: { //second
-  //   path: '/cars/create',
-  //   Component: RegisterCarContainer,
-  //   linkTo: () => '/cars/create'
-  // },
+  CREATE_CAR: { //second
+    path: '/cars/create',
+    Component: RegisterCarContainer,
+    linkTo: () => '/cars/create'
+  },
   // LOT: { //fourth -- also just drawing from the store
   //   path: '/lot',
   //   Component: LotCars,
