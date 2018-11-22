@@ -1,8 +1,10 @@
 export const getCars = state => {
-  const carsArray = Object.keys(state.cars.list).map(key => ({
+  return Object.keys(state.cars.list).map(key => ({
     plate: key,
     ...state.cars.list[key]
   }));
-  console.log('carsArray:', carsArray);
-  return carsArray;
+};
+
+export const getCar = (state, key) =>  {
+  return state.cars.list[key];
 };

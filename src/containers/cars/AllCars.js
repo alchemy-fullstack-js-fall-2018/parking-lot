@@ -6,8 +6,6 @@ const mapStateToProps = state => ({
   cars: getCars(state)
 });
 
-console.log('MapStateToProps:', mapStateToProps);
-
 export default connect(
   mapStateToProps
 )(Cars);

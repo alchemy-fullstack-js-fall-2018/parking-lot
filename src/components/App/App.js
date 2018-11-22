@@ -13,6 +13,7 @@ export default function App() {
       <Router>
         <Switch>
           <Route component={ROUTES.CARS.Component} path={ROUTES.CARS.path} />
+          <Route component={ROUTES.CAR.Component} path={ROUTES.CAR.path} />
         </Switch>
       </Router>
     </Fragment>
