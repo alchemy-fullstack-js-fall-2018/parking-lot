@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <h2>App Home Page</h2>
-      <Link to={ROUTES.CARS.linkTo()}>See all the cars!</Link>
+      <Link to={ROUTES.ALL_CARS.linkTo()}>See all the cars!</Link>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-// Handles REGISTER_CAR, CAR_UPDATE_CAR_SEARCH_TERM
+import { UPDATE_CARS_SEARCH_TERM } from '../actions/cars'
 
 const initialState = {
   searchTerm: '',
@@ -13,6 +13,8 @@ const initialState = {
 
 export default function reducer(state = initialState, { type, payload }) {
   switch(type) {
+    case UPDATE_CARS_SEARCH_TERM:
+      return { ...state, searchTerm: payload };
     default:
       return state;
   }
