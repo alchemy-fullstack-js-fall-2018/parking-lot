@@ -1,3 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CarDetail component renders a CarDetail component 1`] = `<div />`;
+exports[`CarDetail component renders a CarDetail component 1`] = `
+<Fragment>
+  <table
+    width="100%"
+  >
+    <tbody>
+      <tr>
+        <th>
+          Make
+        </th>
+        <th>
+          Model
+        </th>
+        <th>
+          Plate
+        </th>
+        <th>
+          In Lot Now
+        </th>
+        <th>
+          Times Used
+        </th>
+      </tr>
+      <tr>
+        <th>
+          Toyota
+        </th>
+        <th>
+          Corolla
+        </th>
+        <th>
+          ABC123
+        </th>
+        <th>
+          Yes
+        </th>
+        <th>
+          3
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</Fragment>
+`;

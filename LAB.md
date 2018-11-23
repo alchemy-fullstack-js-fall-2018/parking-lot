@@ -16,7 +16,7 @@ XXX* `Header.js`
   * link to `/cars/search`
   * link to `/lot/search`
   * link to `/cars/create`
-* `CarDetail.js`
+XXX* `CarDetail.js`
   * Display the make/model/plate of the car
   * Display the status of the car (is it in the lot)
   * Display the numbers of times the car has used the lot

@@ -2,7 +2,7 @@ import { REGISTER_CAR } from '../actions/cars';
 import fakeCars from '../fixtures/fakeCars';
 
 const initialState = {
-  searchTerm: 'searcher',
+  searchTerm: 'ABC123',
   carList: fakeCars
 };
 

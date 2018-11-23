@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import Header from '../header/Header';
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,6 +15,7 @@ export default function App() {
       <Router>
         <Switch>
           <Route path={ROUTES.REGISTER.path} component={ROUTES.REGISTER.Component}/>
+          <Route path={ROUTES.CAR_DETAIL.path} component={ROUTES.CAR_DETAIL.Component}/>
           <Route path={ROUTES.CARS.path} component={ROUTES.CARS.Component}/>
           <Route path={ROUTES.HOME.path} component={ROUTES.HOME.Component}/>
         </Switch>
