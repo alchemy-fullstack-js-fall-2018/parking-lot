@@ -6,5 +6,8 @@ export const getCars = state => {
 };
 
 export const getCar = (state, key) =>  {
-  return state.cars.list[key];
+  return {
+    plate: key,
+    ...state.cars.list[key]
+  };
 };

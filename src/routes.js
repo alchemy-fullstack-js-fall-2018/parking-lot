@@ -1,5 +1,5 @@
 import AllCars from './containers/cars/AllCars';
-import Car from './containers/cars/Car';
+import CarDetail from './containers/cars/CarDetail';
 
 export default {
   CARS: {
@@ -9,7 +9,7 @@ export default {
   },
   CAR: {
     path: '/cars/:id',
-    Component: Car,
+    Component: CarDetail,
     linkTo: id => `/cars/${id}`
   }
 };
