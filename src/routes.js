@@ -14,7 +14,7 @@ export default {
     Component: AllCars,
     linkTo: () => '/cars'
   },
-  CAR_SEARCH: {
+  SEARCH_CARS: {
     path: '/cars/search',
     Component: FilteredCars,
     linkTo: () => '/cars/search'
