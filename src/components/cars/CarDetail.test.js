@@ -4,7 +4,7 @@ import CarDetail from './CarDetail';
 
 describe('CarDetail component', () => {
   it('renders a CarDetail component', () => {
-    const car = { make: 'Toyota', model: 'Corolla', plate: 'ABC123' };
+    const car = [{ make: 'Toyota', model: 'Corolla', plate: 'ABC123' }];
     const lot = { inLot: true };
     const lotUse = { timesInLot: 3 };
 

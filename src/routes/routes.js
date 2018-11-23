@@ -2,6 +2,7 @@ import Home from '../components/home/Home';
 import RegisterCarContainer from '../containers/cars/RegisterCarContainer';
 import AllCars from '../containers/cars/AllCars';
 import CarDetailContainer from '../../src/containers/cars/CarDetailContainer';
+import SearchAllCarsContainer from '../containers/search/SearchAllCarsContainer';
 
 export const ROUTES = {
   HOME: {
@@ -23,5 +24,10 @@ export const ROUTES = {
     path: '/cars/:id',
     Component: CarDetailContainer,
     linkTo: id => `/cars/${id}`
+  },
+  CAR_SEARCH: {
+    path: '/cars/search',
+    Component: SearchAllCarsContainer,
+    linkTo: () => '/cars/search'
   }
 };

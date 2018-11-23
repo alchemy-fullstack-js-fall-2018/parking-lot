@@ -3,7 +3,17 @@ import React, { Fragment } from 'react';
 // export default function CarDetail({ car, lot, lotUse }) {
 function CarDetail({ car }) {
   // const inLot = lot.inLot ? 'Yes' : 'No';
-  const { make, model, plate } = car[0];
+
+  const carDetails = car.map(car => {
+    return (
+      <tr key={car.plate}>
+        <th>{car.make}</th>
+        <th>{car.model}</th>
+        <th>{car.plate}</th>
+      </tr>
+    );
+  });
+
   return (
     <Fragment>
       <table width="100%">
@@ -15,13 +25,11 @@ function CarDetail({ car }) {
             <th>In Lot Now</th>
             <th>Times Used</th>
           </tr>
-          <tr>
-            <th>{make}</th>
-            <th>{model}</th>
-            <th>{plate}</th>
-            {/* <th>{inLot}</th> */}
-            {/* <th>{lotUse.timesInLot}</th> */}
-          </tr>
+          {/* <tr> */}
+          {carDetails}
+          {/* <th>{inLot}</th> */}
+          {/* <th>{lotUse.timesInLot}</th> */}
+          {/* </tr> */}
         </tbody>
       </table>
     </Fragment>

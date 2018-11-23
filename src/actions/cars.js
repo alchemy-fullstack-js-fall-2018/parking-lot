@@ -10,4 +10,9 @@ export const registerCar = (make, model, plate) => {
   };
 };
 
+export const CAR_UPDATE_SEARCH_TERM = 'CAR_UPDATE_SEARCH_TERM';
+export const carUpdateSearchTerm = searchTerm => ({
+  type: CAR_UPDATE_SEARCH_TERM,
+  payload: searchTerm
+});
 
