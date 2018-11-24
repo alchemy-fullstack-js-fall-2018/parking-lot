@@ -40,6 +40,17 @@ describe('lot reducer', () => {
     expect(newState).toEqual(state);
   });
 
+  it('removes a plate from state', () => {
+    const newState = reducer (state, {
+      type: LOT_CAR_DEPARTED,
+      payload: 'ABC123'
+    });
+    expect(newState).toEqual({
+      searchTerm: '',
+      list: ['YCU411']
+    });
+  });
+
   it('does not alter state when removing a plate not in list', () => {
     const newState = reducer (state, {
       type: LOT_CAR_DEPARTED,
