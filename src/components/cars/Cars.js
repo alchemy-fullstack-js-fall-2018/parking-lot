@@ -10,7 +10,6 @@ const Car = ({ make, model, plate }) => {
     <div>
       <h3>{make}</h3>
       <h4>{model}</h4>
-      <p>{plate}</p>
       <Link key={plate} to={ROUTES.CAR.linkTo(plate)}>{plate}</Link>
     </div>
   );
