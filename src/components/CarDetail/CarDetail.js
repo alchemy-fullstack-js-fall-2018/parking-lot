@@ -11,6 +11,7 @@ export default class CarDetail extends Component {
 
   render() {
     const { plate, color, make, model, lotUseCount, isInLot } = this.props.car;
+    const { carArrives, carDeparts } = this.props;
     const status = isInLot ? 'Parked' : 'Absent';
 
     return (
@@ -19,6 +20,8 @@ export default class CarDetail extends Component {
         <h3>{color} {make} {model}</h3>
         <h3>Times in lot: {lotUseCount}</h3>
         <h3>Status: {status}</h3>
+        {isInLot && <button onClick={() => carDeparts(plate)}>Car has departed</button>}
+        {!isInLot && <button onClick={() => carArrives(plate)}>Car has arrived</button>}
       </div>
     );
   }

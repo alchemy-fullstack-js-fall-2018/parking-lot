@@ -9,6 +9,7 @@ const initialState = {
 export default function reducer(state = initialState, { type, payload }) {
   switch(type) {
     case LOT_CAR_ARRIVED: {
+      debugger;
       const visitCount = state[payload] || 0;
       return { ...state, [payload]: visitCount + 1 };
     }

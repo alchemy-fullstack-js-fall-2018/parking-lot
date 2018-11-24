@@ -12,12 +12,14 @@ export default function reducer(state = initialState, { type, payload }) {
       return { ...state, searchTerm: payload };
 
     case LOT_CAR_ARRIVED:
+      debugger;
       if(state.list.indexOf(payload) === -1) {
         return { ...state, list: [...state.list, payload] };
       } else {
         return state;
       }
     case LOT_CAR_DEPARTED: {
+      debugger;
       const index = state.list.indexOf(payload);
       if(index > -1) {
         return { ...state, list: [
