@@ -15,3 +15,7 @@ export const getCarsBySearch = state => {
     return car.plate.includes(searchTerm);
   });
 };
+
+export const getCar = (state, plate) => {
+  return state.carList[plate];
+};

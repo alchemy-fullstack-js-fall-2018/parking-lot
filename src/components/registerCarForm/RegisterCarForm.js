@@ -1,5 +1,7 @@
 import React, { PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
+import { Redirect } from 'react-router-dom';
+import { ROUTES } from '../../routes/routes';
 
 export default class RegisterCarForm extends PureComponent {
 
@@ -20,8 +22,10 @@ export default class RegisterCarForm extends PureComponent {
   onSubmit = event => {
     const { registerCar } = this.props;
     const { make, model, plate } = this.state;
+    
     event.preventDefault();
     registerCar(make, model, plate);
+    this.props.history.push(`/cars/${plate}`);
   };
 
   render() {
