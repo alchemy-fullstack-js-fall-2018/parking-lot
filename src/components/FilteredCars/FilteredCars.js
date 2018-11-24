@@ -6,18 +6,19 @@ export default class FilteredCars extends PureComponent {
   static propTypes = {
     cars: PropTypes.array.isRequired,
     searchTerm: PropTypes.string.isRequired,
-    updateSearchTerm: PropTypes.func.isRequired
+    updateSearchTerm: PropTypes.func.isRequired,
+    summary: PropTypes.string
   };
 
   render() {
-    const { cars, searchTerm, updateSearchTerm } = this.props;
+    const { cars, searchTerm, updateSearchTerm, summary } = this.props;
     return (
       <Fragment>
         <form>
           <label htmlFor="searchTerm">Search: </label>
           <input type="text" value={searchTerm} onChange={updateSearchTerm} />
         </form>
-        <Cars cars={cars} />
+        <Cars cars={cars} summary={summary}/>
       </Fragment>
     );
   }

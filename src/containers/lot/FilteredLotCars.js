@@ -5,7 +5,8 @@ import { getFilteredCars, getLotSearchTerm } from '../../selectors/lot';
 
 const mapStateToProps = state => ({
   cars: getFilteredCars(state),
-  searchTerm: getLotSearchTerm(state)
+  searchTerm: getLotSearchTerm(state),
+  summary: 'Cars in Lot'
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Car from '../Car/Car';
 
-const Cars = ({ cars }) => {
+const Cars = ({ cars, summary }) => {
 
   const carItems = cars.map(car => {
     return <Car key={car.plate} car={car} />;
@@ -10,7 +10,7 @@ const Cars = ({ cars }) => {
 
   return (
     <div>
-      <h3>Cars!!</h3>
+      <h3>{summary}</h3>
       <ul>
         {carItems}
       </ul>
@@ -19,7 +19,8 @@ const Cars = ({ cars }) => {
 };
 
 Cars.propTypes = {
-  cars: PropTypes.array.isRequired
+  cars: PropTypes.array.isRequired,
+  summary: PropTypes.string
 };
 
 export default Cars;
