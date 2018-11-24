@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import styles from './CarDetail.css';
 
 export default class CarDetail extends Component {
 
@@ -16,10 +17,11 @@ export default class CarDetail extends Component {
 
     return (
       <div>
-        <h2>Car Detail: {plate}</h2>
-        <h3>{color} {make} {model}</h3>
-        <h3>Times in lot: {lotUseCount}</h3>
-        <h3>Status: {status}</h3>
+        <h2>Car Detail</h2>
+        <p><span className={styles.bold}>Plate:</span> {plate}</p>
+        <p><span className={styles.bold}>Description:</span> {color} {make} {model}</p>
+        <p><span className={styles.bold}>Times in lot:</span> {lotUseCount}</p>
+        <p><span className={styles.bold}>Status:</span> {status}</p>
         {isInLot && <button onClick={() => carDeparts(plate)}>Car has departed</button>}
         {!isInLot && <button onClick={() => carArrives(plate)}>Car has arrived</button>}
       </div>
