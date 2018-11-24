@@ -5,6 +5,13 @@ export const getCars = state => {
   }));
 };
 
+export const getCar = (state, key) =>  {
+  return {
+    plate: key,
+    ...state.cars.list[key]
+  };
+};
+
 export const getCarsSearchTerm = state => {
   return state.cars.searchTerm;
 };

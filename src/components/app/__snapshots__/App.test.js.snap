@@ -10,6 +10,14 @@ exports[`App renders the App 1`] = `
     />
     <Route
       component={[Function]}
+      path="/cars/search"
+    />
+    <Route
+      component={[Function]}
+      path="/cars/:id"
+    />
+    <Route
+      component={[Function]}
       path="/"
     />
   </Switch>

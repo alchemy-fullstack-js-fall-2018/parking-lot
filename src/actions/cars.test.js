@@ -2,7 +2,7 @@ import {
   REGISTER_CARS,
   registerCars,
   CAR_UPDATE_CAR_SEARCH_TERM,
-  carUpdateCarSearchTerm
+  updateCarSearchTerm
 } from './cars';
 
 describe('car actions', () => {
@@ -19,7 +19,7 @@ describe('car actions', () => {
   });
 
   it('creates an action to update the cars search term', () => {
-    expect(carUpdateCarSearchTerm('ford')).toEqual({
+    expect(updateCarSearchTerm('ford')).toEqual({
       type: CAR_UPDATE_CAR_SEARCH_TERM,
       payload: 'ford'
     });

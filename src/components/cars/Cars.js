@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './Cars.css';
+import { Link } from 'react-router-dom';
+import ROUTES from '../../routes';
 
 import PropTypes from 'prop-types';
 
@@ -9,6 +11,7 @@ const Car = ({ make, model, plate }) => {
       <h3>{make}</h3>
       <h4>{model}</h4>
       <p>{plate}</p>
+      <Link key={plate} to={ROUTES.CAR.linkTo(plate)}>{plate}</Link>
     </div>
   );
 };
