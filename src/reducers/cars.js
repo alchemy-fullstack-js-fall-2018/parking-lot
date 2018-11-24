@@ -1,4 +1,4 @@
-import { UPDATE_CARS_SEARCH_TERM } from '../actions/cars'
+import { UPDATE_CARS_SEARCH_TERM, REGISTER_CAR } from '../actions/cars';
 
 const initialState = {
   searchTerm: '',
@@ -15,6 +15,11 @@ export default function reducer(state = initialState, { type, payload }) {
   switch(type) {
     case UPDATE_CARS_SEARCH_TERM:
       return { ...state, searchTerm: payload };
+    case REGISTER_CAR:
+      return { ...state, list: {
+        ...state.list,
+        [payload.plate]: { make: payload.make, model: payload.model, color: payload.color } }
+      };
     default:
       return state;
   }

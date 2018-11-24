@@ -13,6 +13,7 @@ export default function App() {
       <Router>
         <Switch>
           <Route component={ROUTES.SEARCH_CARS.Component} path={ROUTES.SEARCH_CARS.path} />
+          <Route component={ROUTES.REGISTER_CAR.Component} path={ROUTES.REGISTER_CAR.path} />
           <Route component={ROUTES.CAR.Component} path={ROUTES.CAR.path} />
           <Route component={ROUTES.ALL_CARS.Component} path={ROUTES.ALL_CARS.path} />
           <Route component={ROUTES.HOME.Component} path={ROUTES.HOME.path} />
