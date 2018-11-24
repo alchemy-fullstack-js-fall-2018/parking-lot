@@ -3,6 +3,7 @@ import AllCars from './containers/cars/AllCars';
 import FilteredCars from './containers/cars/FilteredCars';
 import CarDetail from './containers/cars/CarDetail';
 import CarRegistration from './containers/cars/CarRegistration';
+import LotCars from './containers/lot/LotCars';
 
 export default {
   HOME: {
@@ -29,5 +30,10 @@ export default {
     path: '/cars/:id',
     Component: CarDetail,
     linkTo: id => `/cars/${id}`
+  },
+  LOT_CARS: {
+    path: '/lot',
+    Component: LotCars,
+    linkTo: () => '/lot'
   }
 };
