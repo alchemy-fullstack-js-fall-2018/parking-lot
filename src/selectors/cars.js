@@ -22,7 +22,6 @@ export const getCarsSearchTerm = state => {
 
 export const getFilteredCars = state => {
   const searchTerm = getCarsSearchTerm(state).toUpperCase();
-  if(searchTerm === '') return getCars(state);
   return getCars(state).filter(car => {
     return car.make.toUpperCase().includes(searchTerm) ||
     car.model.toUpperCase().includes(searchTerm) ||

@@ -20,7 +20,6 @@ export const getLotUse = (state, plate) => {
 
 export const getFilteredCars = state => {
   const searchTerm = getLotSearchTerm(state).toUpperCase();
-  if(searchTerm === '') return getCars(state);
   return getCars(state).filter(car => {
     return car.make.toUpperCase().includes(searchTerm) ||
     car.model.toUpperCase().includes(searchTerm) ||
