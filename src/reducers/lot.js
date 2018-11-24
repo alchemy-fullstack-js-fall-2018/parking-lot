@@ -6,13 +6,28 @@ const initialState = {
 };
 
 export default function reducer(state = initialState, { type, payload }) {
+  const index = state.list.indexOf(payload);
   switch(type) {
+
     case UPDATE_LOT_SEARCH_TERM:
       return { ...state, searchTerm: payload };
+
     case LOT_CAR_ARRIVED:
-      return { ...state, list: [...state.list, payload] };
+      if(index === -1) {
+        return { ...state, list: [...state.list, payload] };
+      } else {
+        return state;
+      }
+
     case LOT_CAR_DEPARTED:
-      return { ...state, list: state.list.splice(state.list.indexOf(payload), 1) };
+      if(index > -1) {
+        return { ...state, list: [
+          ...state.list.slice(0, index),
+          ...state.list.slice(index + 1)] };
+      } else {
+        return state;
+      }
+      
     default:
       return state;
   }
