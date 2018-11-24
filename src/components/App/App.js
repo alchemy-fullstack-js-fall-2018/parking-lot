@@ -5,12 +5,13 @@ import {
   Route
 } from 'react-router-dom';
 import ROUTES from '../../routes';
+import Header from '../Header/Header';
 
 export default function App() {
   return (
-    <Fragment>
-      <h1>Parking Lot</h1>
-      <Router>
+    <Router>
+      <Fragment>
+        <Header />
         <Switch>
           <Route component={ROUTES.SEARCH_CARS.Component} path={ROUTES.SEARCH_CARS.path} />
           <Route component={ROUTES.REGISTER_CAR.Component} path={ROUTES.REGISTER_CAR.path} />
@@ -18,7 +19,7 @@ export default function App() {
           <Route component={ROUTES.ALL_CARS.Component} path={ROUTES.ALL_CARS.path} />
           <Route component={ROUTES.HOME.Component} path={ROUTES.HOME.path} />
         </Switch>
-      </Router>
-    </Fragment>
+      </Fragment>
+    </Router>
   );
 }
