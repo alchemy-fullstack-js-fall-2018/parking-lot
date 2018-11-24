@@ -4,6 +4,7 @@ import FilteredCars from './containers/cars/FilteredCars';
 import CarDetail from './containers/cars/CarDetail';
 import CarRegistration from './containers/cars/CarRegistration';
 import LotCars from './containers/lot/LotCars';
+import FilteredLotCars from './containers/lot/FilteredLotCars';
 
 export default {
   HOME: {
@@ -35,5 +36,10 @@ export default {
     path: '/lot',
     Component: LotCars,
     linkTo: () => '/lot'
+  },
+  SEARCH_LOT_CARS: {
+    path: '/lot/search',
+    Component: FilteredLotCars,
+    linkTo: () => '/lot/search'
   }
 };
