@@ -8,8 +8,10 @@ const initialState = {
 
 export default function reducer(state = initialState, { type, payload }) {
   switch(type) {
-    case LOT_CAR_ARRIVED:
-      return { ...state, state[payload]: state[payload]++}
+    case LOT_CAR_ARRIVED: {
+      const visitCount = state[payload] || 0;
+      return { ...state, [payload]: visitCount + 1 };
+    }
     default:
       return state;
   }
