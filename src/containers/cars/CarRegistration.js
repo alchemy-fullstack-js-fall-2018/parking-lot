@@ -33,6 +33,7 @@ class CarRegistration extends PureComponent {
     const { plate, make, model, color } = this.state;
     return (
       <form onSubmit={this.handleSubmit}>
+        <h2>New Registration</h2>
 
         <p>
           <label htmlFor="plate">Plate: </label>

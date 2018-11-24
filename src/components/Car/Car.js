@@ -8,8 +8,8 @@ const Car = ({ car }) => {
   const { plate, make, model, color } = car;
   return (
     <div>
-      <Link key={plate} to={ROUTES.CAR.linkTo(plate)}>{plate}</Link>
-      <p> {color} {make} {model} </p>
+
+      <p><Link key={plate} to={ROUTES.CAR.linkTo(plate)}>{plate}</Link>: {color} {make} {model} </p>
     </div>
   );
 };
