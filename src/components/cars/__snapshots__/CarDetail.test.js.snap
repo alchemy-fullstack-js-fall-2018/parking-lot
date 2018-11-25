@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CarDetail /> renders 1`] = `
+<div>
+  <h2>
+    Car Detail
+  </h2>
+  <p>
+    <span>
+      Plate:
+    </span>
+     
+    abcd1234
+  </p>
+  <p>
+    <span>
+      Description:
+    </span>
+    ford
+     
+    pinto
+  </p>
+  <p>
+    <span>
+      Times in lot:
+    </span>
+     
+  </p>
+  <p>
+    <span>
+      Status:
+    </span>
+     
+    not in lot
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Car added to the lot
+  </button>
+</div>
+`;
