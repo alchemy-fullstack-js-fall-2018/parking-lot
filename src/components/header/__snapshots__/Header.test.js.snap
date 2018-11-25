@@ -5,17 +5,23 @@ exports[`Header component renders a Header component 1`] = `
   id="header"
 >
   <h1>
-    Herb's Parking Lot
+    Lot Keeper
   </h1>
   <nav>
-    <a>
+    <a
+      href="/cars/search"
+    >
       Search Cars
     </a>
-    <a>
+    <a
+      href="/"
+    >
       Search Lots
     </a>
-    <a>
-      Create Cars
+    <a
+      href="/cars/register"
+    >
+      Register a Car
     </a>
   </nav>
 </div>

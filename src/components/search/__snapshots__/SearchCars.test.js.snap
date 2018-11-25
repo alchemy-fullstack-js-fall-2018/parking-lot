@@ -23,7 +23,9 @@ exports[`SearchCars component renders a component 1`] = `
           Plate
         </th>
       </tr>
-      <tr>
+      <tr
+        key="ABC123"
+      >
         <th>
           Toyota
         </th>

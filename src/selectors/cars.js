@@ -1,12 +1,12 @@
 export const getAllCars = state => {
-  return Object.keys(state.carList).map(plate => ({
+  return Object.keys(state.cars.carList).map(plate => ({
     plate,
-    ...state.carList[plate]
+    ...state.cars.carList[plate]
   }));
 };
 
 export const getCarSearchTerm = state => {
-  return state.searchTerm;
+  return state.cars.searchTerm;
 };
 
 export const getCarsBySearch = state => {
@@ -17,5 +17,5 @@ export const getCarsBySearch = state => {
 };
 
 export const getCar = (state, plate) => {
-  return state.carList[plate];
+  return state.cars.carList[plate];
 };
