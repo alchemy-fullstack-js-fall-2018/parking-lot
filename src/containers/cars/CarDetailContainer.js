@@ -11,7 +11,7 @@ const mapStateToProps = (state, props) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  addToLot: (plate) => dispatch(addToLot(plate)),
+  addToLot: (make, model, plate) => dispatch(addToLot(make, model, plate)),
   removeFromLot: (plate) => dispatch(removeFromLot(plate))
 });
 

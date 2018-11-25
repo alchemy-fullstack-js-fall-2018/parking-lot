@@ -34,7 +34,7 @@ XXX* `RegisterCarForm.js`
   * `onSubmit` calls a function from props
   * It should handle `preventDefault()` on its own
   * Redirect to `CarDetail`
-* `SearchCars.js`
+XXX* `SearchCars.js`
   * Presentational component
   * text input for search
   * Displays `Cars` list

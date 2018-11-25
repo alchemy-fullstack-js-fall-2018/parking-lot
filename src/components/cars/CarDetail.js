@@ -7,12 +7,14 @@ import PropTypes from 'prop-types';
 function CarDetail({ car, inLot, addToLot, removeFromLot }) {
   if(!car) return <Redirect to={ROUTES.HOME.linkTo()} />;
 
+  const { make, model, plate } = car;
+
   const handleClick = event => {
     event.preventDefault();
     if(!inLot) {
-      addToLot(car.plate);
+      addToLot(make, model, plate);
     } else {
-      removeFromLot(car.plate);
+      removeFromLot(plate);
     }
   };
 
@@ -31,9 +33,9 @@ function CarDetail({ car, inLot, addToLot, removeFromLot }) {
             <th>Times Used</th>
           </tr>
           <tr>
-            <th>{car.make}</th>
-            <th>{car.model}</th>
-            <th>{car.plate}</th>
+            <th>{make}</th>
+            <th>{model}</th>
+            <th>{plate}</th>
             <th>{lotStatus}</th>
             {/* <th>{lotUse.timesInLot}</th> */}
           </tr>

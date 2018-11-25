@@ -1,8 +1,11 @@
 export const LOT_CAR_ARRIVED = 'LOT_CAR_ARRIVED';
-export const addToLot = plate => {
+export const addToLot = (make, model, plate) => {
   return {
     type: LOT_CAR_ARRIVED,
-    payload: { plate }
+    payload: {
+      make,
+      model,
+      plate }
   };
 };
 
