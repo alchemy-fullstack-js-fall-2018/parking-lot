@@ -35,9 +35,9 @@ describe('lot selector', () => {
 
   it('reports whether or not a car is in the lot', () => {
     let result = isInLot(state, 'ABC123');
-    expect(result).toBeTruthy;
+    expect(result).toBeTrue;
     result = isInLot(state, 'ZZZ000');
-    expect(result).toBeFalsy;
+    expect(result).toBeFalse;
   });
 
   it('reports the number of times a car has used the lot', () => {
