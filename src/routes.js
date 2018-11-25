@@ -3,7 +3,6 @@ import AllCars from './containers/AllCars';
 import CarDetailContainer from './containers/CarDetailContainer';
 import SearchAllCarContainer from './containers/SearchAllCarContainer';
 import RegisterCarContainer from './containers/RegisterCarContainer';
-import AllCars from './containers/AllCars';
 import LotCars from './containers/LotCars';
 import SearchLotCarsContainer from './containers/SearchLotCarsContainer';
 

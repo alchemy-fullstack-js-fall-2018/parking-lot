@@ -1,0 +1,11 @@
+#header {
+  background-color: grey;
+  padding: 20px;
+  h1 {
+    text-align: center;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
