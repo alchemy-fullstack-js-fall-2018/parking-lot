@@ -13,3 +13,14 @@ export const getLotCars = state => {
     ...state.lot.carsInLot[plate]
   }));
 };
+
+export const getLotSearchTerm = state => {
+  return state.lot.searchTerm;
+};
+
+export const getLotCarsBySearch = state => {
+  const searchTerm = getLotSearchTerm(state);
+  return getLotCars(state).filter(car => {
+    return car.plate.includes(searchTerm);
+  });
+};

@@ -8,7 +8,7 @@ export default function Header() {
       <h1>Lot Keeper</h1>
       <nav>
         <a href={ROUTES.CAR_SEARCH.path}>Search Cars</a>
-        <a href='/'>Search Lots</a>
+        <a href={ROUTES.LOT_SEARCH.path}>Search Lots</a>
         <a href={ROUTES.REGISTER.path}>Register a Car</a>
       </nav>
     </div>

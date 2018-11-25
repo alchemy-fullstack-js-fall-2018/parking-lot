@@ -16,3 +16,9 @@ export const removeFromLot = plate => {
     payload: { plate }
   };
 };
+
+export const LOT_UPDATE_SEARCH_TERM = 'LOT_UPDATE_SEARCH_TERM';
+export const lotUpdateSearchTerm = searchTerm => ({
+  type: LOT_UPDATE_SEARCH_TERM,
+  payload: searchTerm
+});
