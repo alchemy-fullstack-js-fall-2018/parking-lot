@@ -1,23 +1,27 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-const Car = ({ car }) => {
+const Car = ({ cars }) => {
 
-  const { make, model, plate } = car;
+  const carDetail = cars.map(car => {
+    return (
+      <tr key={car.plate}>
+        <td>{car.make}</td>
+        <td>{car.model}</td>
+        <td>{car.plate}</td>
+      </tr>
+    );
+  });
 
   return (
-    <div>
-      <ul>
-        <h3>{make}</h3>
-        <h3>{model}</h3>
-        <h3>{plate}</h3>
-      </ul>
-    </div>
+    <Fragment>
+      {carDetail}
+    </Fragment>
   );
 };
 
 Car.PropTypes = {
-  car: PropTypes.string.isRequired,
+  car: PropTypes.array.isRequired,
 }
 
 export default Car;

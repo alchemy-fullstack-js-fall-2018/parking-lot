@@ -1,8 +1,8 @@
 import Home from './components/home/Home';
 import AllCars from './containers/AllCars';
 import CarDetailContainer from './containers/CarDetailContainer';
-import SearchCars from './components/searchCar/SearchCar';
-import RegisterCarContainer from './components/registerCarForm/RegisterCarForm';
+import SearchAllCarContainer from './containers/SearchAllCarContainer';
+import RegisterCarContainer from './containers/RegisterCarContainer';
 import AllCars from './containers/AllCars';
 import LotCars from './containers/LotCars';
 import SearchLotCarsContainer from './containers/SearchLotCarsContainer';
@@ -18,14 +18,14 @@ export const ROUTES = {
     Component: AllCars,
     linkTo: () => '/cars'
   },
-  CARDETAIL: {
+  CAR_DETAIL: {
     path: '/cars/:id',
     Component: CarDetailContainer,
     linkTo: () => `/cars/${id}`
   },
-  SEARCH: {
+  CAR_SEARCH: {
     path: '/cars/search',
-    Component: SearchCars,
+    Component: SearchAllCarContainer,
     linkTo: () => '/cars/search'
   },
   REGISTER: {
@@ -33,14 +33,14 @@ export const ROUTES = {
     Component: RegisterCarContainer,
     linkTo: () => '/cars/create'
   },
-  ALLLOT: {
+  ALL_LOT: {
     path: '/lot',
     Component: LotCars,
     linkTo: () => '/lot'
   },
-  LOTSEARCH: {
+  LOT_SEARCH: {
     path: 'lot/search',
-    Component: SearchLot,
+    Component: SearchLotCarsContainer,
     linkTo: () => '/lot/search'
   }
 }
