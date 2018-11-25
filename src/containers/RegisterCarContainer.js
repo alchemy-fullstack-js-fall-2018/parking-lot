@@ -3,7 +3,7 @@ import RegisterCarForm from '../components/registerCarForm/RegisterCarForm';
 import { registerCar } from '../actions/cars';
 
 const mapDispatchToProps = dispatch => ({
-  registerNewCar: (make, model, plate) => dispatch(registerCar(make, model, plate))
+  registerCar: (make, model, plate) => dispatch(registerCar(make, model, plate))
 });
 
-export default connect(mapDispatchToProps)(RegisterCarForm);
+export default connect(() => ({}), mapDispatchToProps)(RegisterCarForm);

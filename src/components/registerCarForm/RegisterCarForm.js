@@ -1,22 +1,47 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 
-const RegisterCarForm = ({ registerNewCar }) => {
-  return (
-    <form>
-      <h3>Register a New Car</h3>
 
-      <label htmlFor="make">Manufacturer:</label>
-      <input type="text" name="make"></input>
+export default class RegisterCarForm extends PureComponent {
+  static propTypes = {
+    registerCar: PropTypes.func.isRequired
+  };
 
-      <label htmlFor="model">Model:</label>
-      <input type="text" name="model"></input>
+  state = {
+    make: '',
+    model: '',
+    plate: ''
+  };
 
-      <label htmlFor="plate">Plate Number:</label>
-      <input type="text" name="plate"></input>
+  handleChange = ({ target }) => {
+    this.setState({ [target.name]: target.value });
+  };
 
-      <button onSubmit={registerNewCar}>Submit</button>
-    </form>
-  );
-};
+  handleSubmit = event => {
+    const { registerCar } = this.props;
+    const { make, model, plate } = this.state;
+    event.preventDefault();
+    registerCar(make, model, plate);
+    // this.props.history.push(`/cars/${plate}`);
+  };
 
-export default RegisterCarForm;
+
+  render() {
+    return (
+      <form>
+        <h3>Register a New Car</h3>
+
+        <label htmlFor="make">Manufacturer:</label>
+        <input type="text" name="make" onChange={this.handleChange} />
+
+        <label htmlFor="model">Model:</label>
+        <input type="text" name="model" onChange={this.handleChange} />
+
+        <label htmlFor="plate">Plate Number:</label>
+        <input type="text" name="plate" onChange={this.handleChange} />
+
+        <button onClick={this.handleSubmit}>Submit</button>
+      </form>
+    );
+  }
+}

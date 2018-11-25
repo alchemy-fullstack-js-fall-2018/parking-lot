@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterCarForm renders a form with inputs for make, model, and plate 1`] = `
+<form>
+  <h3>
+    Register a New Car
+  </h3>
+  <label
+    htmlFor="make"
+  >
+    Manufacturer:
+  </label>
+  <input
+    name="make"
+    onChange={[Function]}
+    type="text"
+  />
+  <label
+    htmlFor="model"
+  >
+    Model:
+  </label>
+  <input
+    name="model"
+    onChange={[Function]}
+    type="text"
+  />
+  <label
+    htmlFor="plate"
+  >
+    Plate Number:
+  </label>
+  <input
+    name="plate"
+    onChange={[Function]}
+    type="text"
+  />
+  <button
+    onClick={[Function]}
+  >
+    Submit
+  </button>
+</form>
+`;

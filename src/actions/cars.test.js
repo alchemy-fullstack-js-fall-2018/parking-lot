@@ -11,9 +11,13 @@ const fakeCar = {
 
 describe('cars actions', () => {
   it('creates an action to register a car', () => {
-    expect(registerCar(fakeCar)).toEqual({
+    expect(registerCar('subaru', 'outback', 'asdf1234')).toEqual({
       type: REGISTER_CAR,
-      payload: fakeCar
+      payload: {
+        make: 'subaru',
+        model: 'outback',
+        plate: 'asdf1234'
+      }
     });
   });
 });

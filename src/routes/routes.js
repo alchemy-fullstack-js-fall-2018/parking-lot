@@ -20,7 +20,7 @@ export const ROUTES = {
   // ONE_CAR: {
   //   path: '/cars/:id',
   //   Component: CarDetailContainer,
-  //   linkTo: () => '/cars/:id'
+  //   linkTo: id => `/cars/${id}`
   // },
   // SEARCH_CARS: { //third
   //   path: '/cars/search',
