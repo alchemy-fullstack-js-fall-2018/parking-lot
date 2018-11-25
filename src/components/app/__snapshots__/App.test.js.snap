@@ -22,6 +22,14 @@ exports[`App renders the App 1`] = `
     />
     <Route
       component={[Function]}
+      path="/lot/search"
+    />
+    <Route
+      component={[Function]}
+      path="/lot"
+    />
+    <Route
+      component={[Function]}
       path="/"
     />
   </Switch>
