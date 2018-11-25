@@ -4,7 +4,7 @@ import { ROUTES } from '../../routes/routes';
 import PropTypes from 'prop-types';
 
 // export default function CarDetail({ car, lot, lotUse }) {
-function CarDetail({ car, inLot, addToLot, removeFromLot }) {
+function CarDetail({ car, inLot, addToLot, removeFromLot, lotUsage }) {
   if(!car) return <Redirect to={ROUTES.HOME.linkTo()} />;
 
   const { make, model, plate } = car;
@@ -37,7 +37,7 @@ function CarDetail({ car, inLot, addToLot, removeFromLot }) {
             <th>{model}</th>
             <th>{plate}</th>
             <th>{lotStatus}</th>
-            {/* <th>{lotUse.timesInLot}</th> */}
+            <th>{lotUsage}</th>
           </tr>
         </tbody>
       </table>

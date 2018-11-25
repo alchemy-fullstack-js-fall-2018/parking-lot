@@ -4,8 +4,8 @@
 
 XXX* `/` Home page
 XXX* `/cars` List all registered cars
-* `/cars/:id` Details about a car
-* `/cars/search` Display cars. Filter by search term (input plate)
+XXX* `/cars/:id` Details about a car
+XXX* `/cars/search` Display cars. Filter by search term (input plate)
 XXX* `/cars/create` Create a new car
 * `/lot` List all cars in the parking lot
 * `/lot/search` List all cars in the parking lot. Filter by search term
