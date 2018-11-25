@@ -19,8 +19,8 @@ export const getCarsSearchTerm = state => {
 export const getFilteredCars = state => {
   const searchTerm = getCarsSearchTerm(state);
   return getCars(state).filter(cars => {
-    return cars.make.toUpperCase().includes(searchTerm) ||
-      cars.model.toUpperCase().includes(searchTerm) ||
-      cars.plate.toUpperCase().includes(searchTerm);
+    return cars.make.includes(searchTerm) ||
+      cars.model.includes(searchTerm) ||
+      cars.plate.includes(searchTerm);
   });
 };

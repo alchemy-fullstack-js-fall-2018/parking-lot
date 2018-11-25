@@ -7,7 +7,7 @@ export const registerCars = (make, model, plate) => {
     payload: {
       make,
       model,
-      plate,
+      plate
     }
   };
 };
