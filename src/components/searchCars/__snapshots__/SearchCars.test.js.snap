@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchCars renders the searched cars 1`] = `
+<Fragment>
+  <form>
+    <label
+      htmlFor="searchTerm"
+    >
+      Search Cars:
+    </label>
+    <input
+      onChange={[Function]}
+      type="text"
+      value="car"
+    />
+  </form>
+  <Cars
+    cars={
+      Array [
+        "car1",
+        "car2",
+      ]
+    }
+  />
+</Fragment>
+`;

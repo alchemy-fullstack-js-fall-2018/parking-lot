@@ -11,7 +11,6 @@ export default class SearchCars extends PureComponent {
 
   render() {
     const { cars, updateSearchTerm, searchTerm } = this.props;
-    console.log('is this thing on?');
 
     return (
       <Fragment>

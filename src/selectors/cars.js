@@ -17,10 +17,10 @@ export const getCarSearchTerm = state => {
 };
 
 export const getCarsBySearch = state => {
-  const searchTerm = getCarSearchTerm(state);
+  const searchTerm = getCarSearchTerm(state).toLowerCase();
   return getCars(state).filter(car => {
-    return car.make.includes(searchTerm) ||
-    car.model.includes(searchTerm) ||
-    car.plate.includes(searchTerm);
+    return car.make.toLowerCase().includes(searchTerm) ||
+    car.model.toLowerCase().includes(searchTerm) ||
+    car.plate.toLowerCase().includes(searchTerm);
   });
 };
