@@ -15,7 +15,7 @@ export const getCar = (state, plate) =>  {
     isInLot: isInLot(state, plate)
   };
 };
-
+  
 export const getCarsSearchTerm = state => {
   return state.cars.searchTerm;
 };
