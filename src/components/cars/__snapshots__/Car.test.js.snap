@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Car component renders a car as a list item 1`] = `
+<li>
+  <Link
+    replace={false}
+    to="/cars/undefined"
+  >
+     - 
+     - 
+  </Link>
+</li>
+`;
