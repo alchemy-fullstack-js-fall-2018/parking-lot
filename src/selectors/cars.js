@@ -1,5 +1,8 @@
 export const getCars = state => {
-  return Object.values(state.cars.list);
+  return Object.keys(state.cars.list).map(key => ({
+    plate: key,
+    ...state.cars.list[key]
+  }));
 };
 
 export const getCar = (state, plate) => {
@@ -9,6 +12,6 @@ export const getCar = (state, plate) => {
   };
 };
 
-export const getCarsBySearch = state => {
-  return //lookup the dry cleaning lab
-};
+// export const getCarsBySearch = state => {
+//   return //lookup the dry cleaning lab
+// };

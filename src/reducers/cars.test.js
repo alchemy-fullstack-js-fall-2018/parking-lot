@@ -27,5 +27,5 @@ describe('car reducer', () => {
 
     const newState = reducer(state, action);
     expect(newState.list['dwigtrox']).toEqual(newCar);
-  })
+  });
 });

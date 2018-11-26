@@ -1,4 +1,3 @@
-//import your actions here
 import {
   REGISTER_CAR,
   CAR_UPDATE_SEARCH_TERM
@@ -28,7 +27,7 @@ const initialState = {
 export default function reducer(state = initialState, { type, payload }) {
   switch(type) {
     case REGISTER_CAR:
-      return { searchTerm: state.searchTerm, list: { ...state.list, [payload.plate]: payload } };
+      return { ...state,  list: { ...state.list, [payload.plate]: payload } };
     case CAR_UPDATE_SEARCH_TERM:
       return {};
     default: return state;
