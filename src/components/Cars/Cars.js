@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Cars = ({ cars, totalCars }) => {
   const carsList = cars.map(car => {
     return (
-      <li key={car.id}>
+      <li key={car.plate}>
         {car.plate} - {car.make} - {car.model}
       </li>
     );
