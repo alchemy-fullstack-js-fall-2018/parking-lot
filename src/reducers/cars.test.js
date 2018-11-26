@@ -28,4 +28,12 @@ describe('car reducer', () => {
     const newState = reducer(state, action);
     expect(newState.list['dwigtrox']).toEqual(newCar);
   });
+
+  it('handles CAR_UPDATE_SEARCH_TERM', () => {
+    const newState = reducer(state, {
+      type: CAR_UPDATE_SEARCH_TERM,
+      payload: 'hyundai'
+    });
+    expect(newState).toEqual({ ...state, searchTerm: 'hyundai' });
+  })
 });

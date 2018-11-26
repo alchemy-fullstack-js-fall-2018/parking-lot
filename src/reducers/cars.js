@@ -29,7 +29,7 @@ export default function reducer(state = initialState, { type, payload }) {
     case REGISTER_CAR:
       return { ...state,  list: { ...state.list, [payload.plate]: payload } };
     case CAR_UPDATE_SEARCH_TERM:
-      return {};
+      return { ...state, searchTerm: payload };
     default: return state;
   }
 }
