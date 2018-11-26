@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Car Detail renders 1`] = `
+<Fragment>
+  <h2
+    className="header"
+  >
+    Car Detail
+  </h2>
+  <div
+    className="outer"
+  >
+    <div
+      className="inner"
+    >
+      <div
+        className="wrapper"
+      >
+        <p>
+          <span>
+            Plate:
+          </span>
+           
+          abcd1234
+        </p>
+        <p>
+          <span>
+            Description:
+          </span>
+          ford
+           
+          pinto
+        </p>
+        <p>
+          <span>
+            Times in lot:
+          </span>
+           
+        </p>
+        <p>
+          <span>
+            Status:
+          </span>
+           
+          not in lot
+        </p>
+      </div>
+      <button
+        className="button"
+        onClick={[Function]}
+      >
+        Car added to the lot
+      </button>
+    </div>
+  </div>
+</Fragment>
+`;
