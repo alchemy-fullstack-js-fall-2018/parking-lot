@@ -1,5 +1,8 @@
 export const getLotCars = state => {
-  return Object.values(lot.cars); // i think?
+  return Object.keys(state.lot.list).map(key => ({
+    plate: key,
+    ...state.lot.list[key]
+  }));
 };
 
 export const getLotCarsBySearch = state => {

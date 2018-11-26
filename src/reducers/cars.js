@@ -20,6 +20,16 @@ const initialState = {
       make: 'Subaru',
       model: 'Outback',
       plate: 'ham4040'
+    },
+    scr4nt0n: {
+      make: 'Chrysler',
+      model: 'Sebring',
+      plate: 'scr4nt0n'
+    },
+    xyz123: {
+      make: 'Toyota',
+      model: 'Camry',
+      plate: 'xyz123'
     }
   }
 };

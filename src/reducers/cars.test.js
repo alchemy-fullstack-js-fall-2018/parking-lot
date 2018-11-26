@@ -1,5 +1,5 @@
 import reducer from './cars';
-import { REGISTER_CAR, CAR_UPDATE_SEARCH_TERM} from '../actions/cars';
+import { REGISTER_CAR, CAR_UPDATE_SEARCH_TERM } from '../actions/cars';
 
 describe('car reducer', () => {
   const state = {

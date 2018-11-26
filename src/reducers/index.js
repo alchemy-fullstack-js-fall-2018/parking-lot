@@ -5,6 +5,6 @@ import lotUseReducer from './lotUse';
 
 export default combineReducers({
   cars: carsReducer,
-  // lot: lotReducer,
+  lot: lotReducer,
   // lotUse: lotUseReducer
 });
