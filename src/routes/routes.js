@@ -32,7 +32,7 @@ export const ROUTES = {
     Component: RegisterCarContainer,
     linkTo: () => '/cars/create'
   },
-  LOT: { //fourth -- also just drawing from the store
+  LOT: { 
     path: '/lot',
     Component: LotCars,
     linkTo: () => '/lot'
