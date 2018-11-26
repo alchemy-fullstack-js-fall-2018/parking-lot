@@ -2,18 +2,27 @@
 
 exports[`Filtered Cars renders 1`] = `
 <Fragment>
-  <form>
-    <label
-      htmlFor="searchTerm"
+  <h3
+    className="header"
+  >
+    Search Cars
+  </h3>
+  <div>
+    <form
+      className="form"
     >
-      Search: 
-    </label>
-    <input
-      onChange={[MockFunction]}
-      type="text"
-      value="a search term"
-    />
-  </form>
+      <label
+        htmlFor="searchTerm"
+      >
+        Search: 
+      </label>
+      <input
+        onChange={[MockFunction]}
+        type="text"
+        value="a search term"
+      />
+    </form>
+  </div>
   <Cars
     cars={
       Array [

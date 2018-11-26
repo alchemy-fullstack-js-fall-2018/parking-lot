@@ -35,7 +35,7 @@ class CarRegistration extends PureComponent {
 
     return (
       <Fragment>
-        <h1>Register a New Car</h1>
+        <h3>Register a New Car</h3>
         <form>
           <label htmlFor='plate'>Plate</label>
           <input id='plate' type='text' name='plate' onChange={this.handleChange}/>
