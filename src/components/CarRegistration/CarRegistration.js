@@ -6,7 +6,8 @@ import ROUTES from '../../routes';
 export default class CarRegistration extends PureComponent {
 
   static propTypes = {
-    onSubmit: PropTypes.func.isRequired
+    onSubmit: PropTypes.func.isRequired,
+    history: PropTypes.array
   };
 
   state = {
