@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests for FilteredCars component renders a FilteredCars component 1`] = `
+<Fragment>
+  <form>
+    <label
+      htmlFor="searchTerm"
+    >
+      Search: 
+    </label>
+    <input
+      onChange={[MockFunction]}
+      type="text"
+      value="Acclaim"
+    />
+  </form>
+  <Cars
+    cars={
+      Array [
+        Object {
+          "color": "pink",
+          "isInLot": true,
+          "lotUseCount": 2,
+          "make": "Plymouth",
+          "model": "Edsel",
+          "plate": "ZZZ000",
+        },
+        Object {
+          "color": "red",
+          "isInLot": false,
+          "lotUseCount": 3,
+          "make": "Plymouth",
+          "model": "Acclaim",
+          "plate": "YYY111",
+        },
+      ]
+    }
+    summary="Test FilteredCars"
+  />
+</Fragment>
+`;
