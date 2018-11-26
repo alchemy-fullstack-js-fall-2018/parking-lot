@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import styles from './CarDetail.css';
 import PropTypes from 'prop-types';
 
 export default class CarDetail extends Component {
@@ -15,15 +16,21 @@ export default class CarDetail extends Component {
     const status = isInLot ? 'in lot' : 'not in lot';
 
     return (
-      <div>
-        <h2>Car Detail</h2>
-        <p><span>Plate:</span> {plate}</p>
-        <p><span>Description:</span>{make} {model}</p>
-        <p><span>Times in lot:</span> {lotUseCount}</p>
-        <p><span>Status:</span> {status}</p>
-        {isInLot && <button onClick={() => carDeparture(plate)}>Car left the lot</button>}
-        {!isInLot && <button onClick={() => carArrival(plate)}>Car added to the lot</button>}
-      </div>
+      <Fragment>
+        <h2 className={styles.header}>Car Detail</h2>
+        <div className={styles.outer}>
+          <div className={styles.inner}>
+            <div className={styles.wrapper}>
+              <p><span>Plate:</span> {plate}</p>
+              <p><span>Description:</span>{make} {model}</p>
+              <p><span>Times in lot:</span> {lotUseCount}</p>
+              <p><span>Status:</span> {status}</p>
+            </div>
+            {isInLot && <button className={styles.button}onClick={() => carDeparture(plate)}>Car left the lot</button>}
+            {!isInLot && <button className={styles.button}onClick={() => carArrival(plate)}>Car added to the lot</button>}
+          </div>
+        </div>
+      </Fragment>
     );
   }
 

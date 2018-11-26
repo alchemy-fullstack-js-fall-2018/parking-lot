@@ -1,6 +1,7 @@
 import React, { PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import styles from './CarRegistration.css';
 import { registerCars } from '../../actions/cars';
 import ROUTES from '../../routes';
 
@@ -35,19 +36,21 @@ class CarRegistration extends PureComponent {
 
     return (
       <Fragment>
-        <h3>Register a New Car</h3>
-        <form>
-          <label htmlFor='plate'>Plate</label>
-          <input id='plate' type='text' name='plate' onChange={this.handleChange}/>
+        <h3 className={styles.header}>Register a New Car</h3>
+        <div className={styles.wrapper}>
+          <form className={styles.form}>
+            <label className={styles.label} htmlFor='plate'>Plate:</label><br/>
+            <input id='plate' type='text' name='plate' onChange={this.handleChange} required/><br/>
 
-          <label htmlFor='make'>Make</label>
-          <input id='make' type='text' name='make' onChange={this.handleChange}/>
+            <label className={styles.label} htmlFor='make'>Make:</label><br/>
+            <input id='make' type='text' name='make' onChange={this.handleChange} required/><br/>
 
-          <label htmlFor='model'>Model</label>
-          <input id='model' type='text' name='model' onChange={this.handleChange}/>
+            <label className={styles.label} htmlFor='model'>Model:</label><br/>
+            <input id='model' type='text' name='model' onChange={this.handleChange} required/><br/>
 
-          <button onClick={this.onSubmit}>Add</button>
-        </form>
+            <button className={styles.button} onClick={this.onSubmit}>Add</button>
+          </form>
+        </div>
       </Fragment>
     );
   }
