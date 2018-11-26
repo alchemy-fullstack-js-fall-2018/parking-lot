@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filtered Cars renders 1`] = `
+<Fragment>
+  <form>
+    <label
+      htmlFor="searchTerm"
+    >
+      Search: 
+    </label>
+    <input
+      onChange={[MockFunction]}
+      type="text"
+      value="a search term"
+    />
+  </form>
+  <Cars
+    cars={
+      Array [
+        Object {
+          "make": "a make",
+          "model": "a model",
+          "plate": "a plate",
+        },
+      ]
+    }
+  />
+</Fragment>
+`;

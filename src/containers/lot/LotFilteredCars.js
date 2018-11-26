@@ -1,4 +1,4 @@
-import FilteredCars from '../cars/FilteredCars';
+import FilteredCars from '../../components/cars/FilteredCars';
 import { connect } from 'react-redux';
 import { updateLotSearchTerm } from '../../actions/lot';
 import { getFilteredCars, getLotSearchTerm } from '../../selectors/lot';

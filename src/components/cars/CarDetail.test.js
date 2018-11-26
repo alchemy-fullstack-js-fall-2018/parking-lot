@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import CarDetail from './CarDetail';
 
-describe('<CarDetail />', () => {
+describe('Car Detail', () => {
   test('renders', () => {
     const carDeparture = jest.fn();
     const carArrival = jest.fn();
