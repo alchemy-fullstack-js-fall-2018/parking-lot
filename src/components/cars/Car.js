@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import { ROUTES } from '../../routes';
 
 const Car = ({ cars }) => {
 
@@ -8,7 +10,7 @@ const Car = ({ cars }) => {
       <tr key={car.plate}>
         <td>{car.make}</td>
         <td>{car.model}</td>
-        <td>{car.plate}</td>
+        <Link to={ROUTES.CAR_DETAIL.linkTo(plate)}></Link><td>{car.plate}</td>
       </tr>
     );
   });
