@@ -5,7 +5,7 @@ import Cars from '../../components/cars/Cars';
 import { updateCarSearchTerm } from '../../actions/cars';
 import { getFilteredCars, getCarsSearchTerm } from '../../selectors/cars';
 
-class FilteredCars extends PureComponent {
+export class FilteredCars extends PureComponent {
   static propTypes = {
     cars: PropTypes.array.isRequired,
     searchTerm: PropTypes.string.isRequired,

@@ -8,7 +8,7 @@ import {
 describe('car actions', () => {
 
   it('creates an action to add a car to cars list', () => {
-    expect(registerCars('ford', 'pinto', 'abcd1234')).toEqual({
+    expect(registerCars('abcd1234', 'ford', 'pinto')).toEqual({
       type: REGISTER_CARS,
       payload: {
         make: 'ford',

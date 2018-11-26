@@ -1,15 +1,15 @@
 import { getLotUse, isInLot } from './lot';
 
 export const getCars = state => {
-  return Object.keys(state.cars.list).map(key => ({
-    plate: key,
-    ...state.cars.list[key]
+  return Object.keys(state.cars.list).map(plate => ({
+    plate,
+    ...state.cars.list[plate]
   }));
 };
 
 export const getCar = (state, plate) =>  {
   return {
-    plate: plate,
+    plate,
     ...state.cars.list[plate],
     lotUseCount: getLotUse(state, plate),
     isInLot: isInLot(state, plate)

@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { registerCars } from '../../actions/cars';
@@ -8,7 +8,7 @@ import ROUTES from '../../routes';
 class CarRegistration extends PureComponent {
 
   static propTypes = {
-    onSubmit: PropTypes.func.isRequired
+    onSubmit: PropTypes.func
   };
 
   state = {
@@ -21,51 +21,43 @@ class CarRegistration extends PureComponent {
     this.setState({ [target.name]: target.value });
   };
 
-  handleSubmit = event => {
+  onSubmit = event => {
+    const { onSubmit } = this.props;
     const { plate, make, model } = this.state;
+
     event.preventDefault();
-    this.props.onSubmit({ plate, make, model });
+    onSubmit(plate, make, model);
     this.props.history.push(ROUTES.CAR.linkTo(plate));
   };
 
   render() {
-    const { plate, make, model } = this.state;
+
+
     return (
-      <form onSubmit={this.handleSubmit}>
-        <h2>New Registration</h2>
+      <Fragment>
+        <h1>Register a New Car</h1>
+        <form>
+          <label htmlFor='plate'>Plate</label>
+          <input id='plate' type='text' name='plate' onChange={this.handleChange}/>
 
-        <p>
-          <label htmlFor="plate">Plate: </label>
-          <input type="text" name="plate" value={plate} onChange={this.handleChange} />
-        </p>
+          <label htmlFor='make'>Make</label>
+          <input id='make' type='text' name='make' onChange={this.handleChange}/>
 
-        <p>
-          <label htmlFor="make">Make: </label>
-          <input type="text" name="make" value={make} onChange={this.handleChange} />
-        </p>
+          <label htmlFor='model'>Model</label>
+          <input id='model' type='text' name='model' onChange={this.handleChange}/>
 
-        <p>
-          <label htmlFor="model">Model: </label>
-          <input type="text" name="model" value={model} onChange={this.handleChange} />
-        </p>
-
-        <button type="submit">Register</button>
-      </form>
+          <button onClick={this.onSubmit}>Add</button>
+        </form>
+      </Fragment>
     );
   }
 }
 
-const mapStateToProps = () => {
-  return { plate: '', make: '', model: '' };
-};
-
 const mapDispatchToProps = dispatch => ({
-  onSubmit(car) {
-    dispatch(registerCars(car));
-  }
+  onSubmit: (plate, make, model) => dispatch(registerCars(plate, make, model))
 });
 
 export default connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(CarRegistration);
