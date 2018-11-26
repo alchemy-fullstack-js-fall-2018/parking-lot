@@ -14,7 +14,7 @@ export const getCar = (state, plate) => {
 
 export const getCarSearchTerm = state => {
   return state.cars.searchTerm;
-}
+};
 
 export const getCarsBySearch = state => {
   const searchTerm = getCarSearchTerm(state);

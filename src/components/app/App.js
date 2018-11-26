@@ -13,7 +13,7 @@ export default function App() {
       <h1>doing some car stuff</h1>
       <Router>
         <Switch>
-          <Route component={ROUTES.SEARCH_CARS.component} path={ROUTES.SEARCH_CARS.path} />
+          <Route component={ROUTES.SEARCH_CARS.Component} path={ROUTES.SEARCH_CARS.path} />
           <Route component={ROUTES.CREATE_CAR.Component} path={ROUTES.CREATE_CAR.path} />
           <Route component={ROUTES.CAR.Component} path={ROUTES.CAR.path} />
           <Route component={ROUTES.ALL_CARS.Component} path={ROUTES.ALL_CARS.path} />
