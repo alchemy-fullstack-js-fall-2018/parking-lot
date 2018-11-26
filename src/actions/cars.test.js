@@ -1,6 +1,8 @@
 import {
   REGISTER_CAR,
-  registerCar
+  registerCar,
+  CAR_UPDATE_SEARCH_TERM,
+  updateCarSearchTerm
 } from './cars';
 
 const fakeCar = {
@@ -18,6 +20,13 @@ describe('cars actions', () => {
         model: 'outback',
         plate: 'asdf1234'
       }
+    });
+  });
+
+  it('creates an action to update the search term', () => {
+    expect(updateCarSearchTerm('subaru')).toEqual({
+      type: CAR_UPDATE_SEARCH_TERM,
+      payload: 'subaru'
     });
   });
 });

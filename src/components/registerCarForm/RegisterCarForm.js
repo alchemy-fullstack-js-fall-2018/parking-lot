@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 export default class RegisterCarForm extends PureComponent {
   static propTypes = {
-    registerCar: PropTypes.func.isRequired
+    registerCar: PropTypes.func
   };
 
   state = {

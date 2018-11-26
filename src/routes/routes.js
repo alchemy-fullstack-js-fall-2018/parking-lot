@@ -17,11 +17,11 @@ export const ROUTES = {
     Component: AllCars,
     linkTo: () => '/cars'
   },
-  // ONE_CAR: {
-  //   path: '/cars/:id',
-  //   Component: CarDetailContainer,
-  //   linkTo: id => `/cars/${id}`
-  // },
+  CAR: {
+    path: '/cars/:id',
+    Component: CarDetailContainer,
+    linkTo: id => `/cars/${id}`
+  },
   // SEARCH_CARS: { //third
   //   path: '/cars/search',
   //   Component: SearchAllCarsContainer,
