@@ -4,7 +4,7 @@ import Car from './Car';
 
 describe ('tests for Car component', () => {
 
-  it('renders an Car component', () => {
+  it('renders a Car component', () => {
     const car = {
       plate: 'ZZZ000',
       make: 'Plymouth',
