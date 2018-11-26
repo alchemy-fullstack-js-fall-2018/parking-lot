@@ -24,4 +24,3 @@ export const getCarsBySearch = state => {
     car.plate.includes(searchTerm);
   });
 };
-//lookup the dry cleaning lab

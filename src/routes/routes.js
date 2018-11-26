@@ -22,11 +22,11 @@ export const ROUTES = {
     Component: CarDetailContainer,
     linkTo: id => `/cars/${id}`
   },
-  // SEARCH_CARS: { //third
-  //   path: '/cars/search',
-  //   Component: SearchAllCarsContainer,
-  //   linkTo: () => '/cars/search'
-  // },
+  SEARCH_CARS: { //third
+    path: '/cars/search',
+    Component: SearchAllCarsContainer,
+    linkTo: () => '/cars/search'
+  },
   CREATE_CAR: { //second
     path: '/cars/create',
     Component: RegisterCarContainer,
