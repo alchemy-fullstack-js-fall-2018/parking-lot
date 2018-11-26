@@ -35,5 +35,5 @@ describe('car reducer', () => {
       payload: 'hyundai'
     });
     expect(newState).toEqual({ ...state, searchTerm: 'hyundai' });
-  })
+  });
 });
