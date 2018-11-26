@@ -5,14 +5,25 @@ exports[`Car component matches snapshot 1`] = `
   <tr
     key="ABC123"
   >
-    <td>
+    <td
+      id="make"
+    >
       Toyota
     </td>
-    <td>
+    <td
+      id="model"
+    >
       Corolla
     </td>
-    <td>
-      ABC123
+    <td
+      id="plate"
+    >
+      <Link
+        replace={false}
+        to="asldkfj"
+      >
+        ABC123
+      </Link>
     </td>
   </tr>
 </Fragment>

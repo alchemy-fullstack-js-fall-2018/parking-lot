@@ -5,7 +5,9 @@ exports[`RegisterCarForm component renders a component 1`] = `
   <h1>
     Register a New Car
   </h1>
-  <form>
+  <form
+    onSubmit={[Function]}
+  >
     <label
       htmlFor="make"
     >
@@ -39,9 +41,7 @@ exports[`RegisterCarForm component renders a component 1`] = `
       onChange={[Function]}
       type="text"
     />
-    <button
-      onClick={[Function]}
-    >
+    <button>
       Register
     </button>
   </form>

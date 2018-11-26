@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Cars from './Cars';
+jest.mock('../../routes/routes');
 
 describe('Cars component', () => {
 

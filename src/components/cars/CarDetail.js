@@ -3,11 +3,12 @@ import { Redirect } from 'react-router-dom';
 import { ROUTES } from '../../routes/routes';
 import PropTypes from 'prop-types';
 
-// export default function CarDetail({ car, lot, lotUse }) {
 function CarDetail({ car, inLot, addToLot, removeFromLot, lotUsage }) {
   if(!car) return <Redirect to={ROUTES.HOME.linkTo()} />;
 
   const { make, model, plate } = car;
+  const lotStatus = inLot ? 'Yes' : 'No';
+  const buttonText = inLot ? 'Remove from Lot' : 'Add to Lot';
 
   const handleClick = event => {
     event.preventDefault();
@@ -18,8 +19,6 @@ function CarDetail({ car, inLot, addToLot, removeFromLot, lotUsage }) {
     }
   };
 
-  const lotStatus = inLot ? 'Yes' : 'No';
-  const buttonText = inLot ? 'Remove from Lot' : 'Add to Lot';
 
   return (
     <Fragment>
@@ -48,7 +47,10 @@ function CarDetail({ car, inLot, addToLot, removeFromLot, lotUsage }) {
 
 CarDetail.propTypes = {
   car: PropTypes.object.isRequired,
-  inLot: PropTypes.bool.isRequired
+  inLot: PropTypes.bool.isRequired,
+  addToLot: PropTypes.func.isRequired,
+  removeFromLot: PropTypes.func.isRequired,
+  lotUsage: PropTypes.number.isRequired
 };
 
 export default CarDetail;

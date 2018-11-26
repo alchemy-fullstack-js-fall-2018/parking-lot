@@ -8,21 +8,21 @@ exports[`Header component renders a Header component 1`] = `
     Lot Keeper
   </h1>
   <nav>
-    <a
-      href="/cars/search"
+    <Link
+      replace={false}
     >
       Search Cars
-    </a>
-    <a
-      href="/"
+    </Link>
+    <Link
+      replace={false}
     >
       Search Lots
-    </a>
-    <a
-      href="/cars/register"
+    </Link>
+    <Link
+      replace={false}
     >
       Register a Car
-    </a>
+    </Link>
   </nav>
 </div>
 `;

@@ -10,9 +10,9 @@ import 'normalize.css';
 
 export default function App() {
   return (
-    <Fragment>
-      <Header />
-      <Router>
+    <Router>
+      <Fragment>
+        <Header />
         <Switch>
           <Route path={ROUTES.REGISTER.path} component={ROUTES.REGISTER.Component}/>
           <Route path={ROUTES.CAR_SEARCH.path} component={ROUTES.CAR_SEARCH.Component}/>
@@ -22,7 +22,7 @@ export default function App() {
           <Route path={ROUTES.LOT.path} component={ROUTES.LOT.Component} />
           <Route path={ROUTES.HOME.path} component={ROUTES.HOME.Component}/>
         </Switch>
-      </Router>
-    </Fragment>
+      </Fragment>
+    </Router>
   );
 }
