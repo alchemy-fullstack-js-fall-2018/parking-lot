@@ -12,7 +12,7 @@ export const ROUTES = {
     Component: Home,
     linkTo: () => '/'
   },
-  ALLCARS: {
+  ALL_CARS: {
     path: '/cars',
     Component: AllCars,
     linkTo: () => '/cars'
