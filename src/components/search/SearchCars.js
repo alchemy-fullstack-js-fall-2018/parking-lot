@@ -15,8 +15,8 @@ export default function SearchCars({ updateSearchTerm, searchTerm, car }) {
 
   return (
     <Fragment>
-      <label>Search Cars by Plate</label>
-      <input type="text" value={searchTerm} onChange={updateSearchTerm}/>
+      <label htmlFor="search">Search Cars by Plate</label>
+      <input type="text" id="search" name="search" value={searchTerm} onChange={updateSearchTerm}/>
       {car &&
         <table width="100%">
           <tbody>
