@@ -37,7 +37,12 @@ exports[`SearchCars component renders a component 1`] = `
           Corolla
         </th>
         <th>
-          ABC123
+          <Link
+            replace={false}
+            to="/cars/ABC123"
+          >
+            ABC123
+          </Link>
         </th>
       </tr>
     </tbody>

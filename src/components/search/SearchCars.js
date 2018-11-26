@@ -1,14 +1,18 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
+import { ROUTES } from '../../routes/routes';
 
 
 export default function SearchCars({ updateSearchTerm, searchTerm, car }) {
 
+
   const carDetails = car.map(car => {
+    const { make, model, plate } = car;
     return (
-      <tr key={car.plate}>
-        <th>{car.make}</th>
-        <th>{car.model}</th>
-        <th>{car.plate}</th>
+      <tr key={plate}>
+        <th>{make}</th>
+        <th>{model}</th>
+        <th><Link to={ROUTES.CAR_DETAIL.linkTo(plate)}>{plate}</Link></th>
       </tr>
     );
   });
