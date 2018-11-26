@@ -12,6 +12,16 @@ export const getCar = (state, plate) => {
   };
 };
 
-// export const getCarsBySearch = state => {
-//   return //lookup the dry cleaning lab
-// };
+export const getCarSearchTerm = state => {
+  return state.cars.searchTerm;
+}
+
+export const getCarsBySearch = state => {
+  const searchTerm = getCarSearchTerm(state);
+  return getCars(state).filter(car => {
+    return car.make.includes(searchTerm) ||
+    car.model.includes(searchTerm) ||
+    car.plate.includes(searchTerm);
+  });
+};
+//lookup the dry cleaning lab
