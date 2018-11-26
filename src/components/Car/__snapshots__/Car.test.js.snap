@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests for Car component renders an Car component 1`] = `
+<div>
+  <p>
+    <Link
+      replace={false}
+      to="/cars/ZZZ000"
+    >
+      ZZZ000
+    </Link>
+    : 
+    pink
+     
+    Plymouth
+     
+    Edsel
+     
+  </p>
+</div>
+`;
