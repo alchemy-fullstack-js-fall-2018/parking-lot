@@ -10,16 +10,19 @@ exports[`Header component renders a Header component 1`] = `
   <nav>
     <Link
       replace={false}
+      to="randoString"
     >
       Search Cars
     </Link>
     <Link
       replace={false}
+      to="randoString2"
     >
       Search Lots
     </Link>
     <Link
       replace={false}
+      to="randoString3"
     >
       Register a Car
     </Link>

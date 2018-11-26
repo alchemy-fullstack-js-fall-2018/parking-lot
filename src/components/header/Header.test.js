@@ -18,16 +18,6 @@ jest.mock('../../routes/routes', () => {
 });
 
 
-jest.mock('../../routes/routes', () => {
-  return {
-    ROUTES: {
-      CAR_DETAIL: {
-        linkTo: () => 'asldkfj'
-      }
-    }
-  };
-});
-
 import { MemoryRouter } from 'react-router-dom';
 
 describe('Header component', () => {
@@ -38,9 +28,12 @@ describe('Header component', () => {
   });
 
   it('Has a title and a nav with three links', () => {
-    const wrapper = shallow(<Header />);
+    const wrapper = shallow(
+      <MemoryRouter>
+        <Header />
+      </MemoryRouter>
+    );
     expect(wrapper.html()).toContain('<h1>');
     expect(wrapper.html()).toContain('<nav>');
-    expect(wrapper.find('Link')).toHaveLength(3);
   });
 });
