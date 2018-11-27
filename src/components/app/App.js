@@ -17,11 +17,15 @@ export default function App() {
         <Route path={ROUTES.ALL_CARS.path} component={ROUTES.ALL_CARS.Component} />
           <Route path={ROUTES.HOME.path} component={ROUTES.HOME.Component} />
 
-          {/* <Route path={ROUTES.CAR_DETAIL.path} component={ROUTES.CAR_DETAIL.Component} />
-          <Route path={ROUTES.CAR_SEARCH.path} component={ROUTES.CAR_SEARCH.Component} />
-          <Route path={ROUTES.REGISTER.path} component={ROUTES.REGISTER.Component} />
+          {/* <Route path={ROUTES.CAR_DETAIL.path} component={ROUTES.CAR_DETAIL.Component} /> */}
+
+          {/* <Route path={ROUTES.CAR_SEARCH.path} component={ROUTES.CAR_SEARCH.Component} /> */}
+
+          {/* <Route path={ROUTES.REGISTER.path} component={ROUTES.REGISTER.Component} /> */}
+
           <Route path={ROUTES.ALL_LOT.path} component={ROUTES.ALL_LOT.Component} />
-          <Route path={ROUTES.LOT_SEARCH.path} component={ROUTES.LOT_SEARCH.Component} /> */}
+
+          <Route path={ROUTES.LOT_SEARCH.path} component={ROUTES.LOT_SEARCH.Component} />
         </Switch>
       </Router>
     </Fragment>

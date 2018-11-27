@@ -16,7 +16,7 @@ export default {
     path: '/cars',
     Component: AllCars,
     linkTo: () => '/cars'
-  }
+  },
   // CAR_DETAIL: {
   //   path: '/cars/:id',
   //   Component: CarDetailContainer,
@@ -32,14 +32,14 @@ export default {
   //   Component: RegisterCarContainer,
   //   linkTo: () => '/cars/create'
   // },
-  // ALL_LOT: {
-  //   path: '/lot',
-  //   Component: LotCars,
-  //   linkTo: () => '/lot'
-  // },
-  // LOT_SEARCH: {
-  //   path: 'lot/search',
-  //   Component: SearchLotCarsContainer,
-  //   linkTo: () => '/lot/search'
-  // }
+  ALL_LOT: {
+    path: '/lot',
+    Component: LotCars,
+    linkTo: () => '/lot'
+  },
+  LOT_SEARCH: {
+    path: 'lot/search',
+    Component: SearchLotCarsContainer,
+    linkTo: () => '/lot/search'
+  }
 };
