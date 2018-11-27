@@ -5,6 +5,15 @@ export const getLotCars = state => {
   }));
 };
 
+export const getLotSearchTerm = state => {
+  return state.lot.searchTerm;
+};
+
 export const getLotCarsBySearch = state => {
-  //also, check out the dry cleaners
+  const searchTerm = getLotSearchTerm(state).toLowerCase();
+  return getLotCars(state).filter(car => {
+    return car.make.toLowerCase().includes(searchTerm) ||
+    car.model.toLowerCase().includes(searchTerm) ||
+    car.plate.toLowerCase().includes(searchTerm);
+  });
 };

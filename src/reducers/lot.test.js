@@ -24,5 +24,5 @@ describe('lot reducers', () => {
       payload: 'hyundai'
     });
     expect(newState).toEqual({ ...state, searchTerm: 'hyundai' });
-  })
+  });
 });

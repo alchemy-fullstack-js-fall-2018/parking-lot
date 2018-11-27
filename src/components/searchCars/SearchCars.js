@@ -15,7 +15,7 @@ export default class SearchCars extends PureComponent {
     return (
       <Fragment>
         <form>
-          <label htmlFor="searchTerm">Search Cars:</label>
+          <label htmlFor="searchTerm">Search Cars:  </label>
           <input type="text" value={searchTerm} onChange={updateSearchTerm} />
         </form>
 

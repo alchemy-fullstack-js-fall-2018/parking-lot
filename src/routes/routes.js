@@ -32,14 +32,14 @@ export const ROUTES = {
     Component: RegisterCarContainer,
     linkTo: () => '/cars/create'
   },
-  LOT: { 
+  LOT: {
     path: '/lot',
     Component: LotCars,
     linkTo: () => '/lot'
   },
-  // SEARCH_LOT: { //fifth
-  //   path: '/lot/search',
-  //   Component: SearchLotCarsContainer,
-  //   linkTo: () => '/lot/search'
-  // }
+  SEARCH_LOT: {
+    path: '/lot/search',
+    Component: SearchLotCarsContainer,
+    linkTo: () => '/lot/search'
+  }
 };

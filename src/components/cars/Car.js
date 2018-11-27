@@ -13,7 +13,7 @@ const Car = ({ make, model, plate }) => {
 };
 
 Car.propTypes = {
-  car: PropTypes.object.isRequired
+  car: PropTypes.object
 };
 
 export default Car;
