@@ -1,4 +1,4 @@
-import { LOT_CAR_ARRIVED, LOT_UPDATE_CAR_SEARCH_TERM } from '../actions/lot';
+import { LOT_CAR_ARRIVED, LOT_UPDATE_CAR_SEARCH_TERM, LOT_CAR_DEPARTED } from '../actions/lot';
 
 const initialState = {
   searchTerm: '',
@@ -33,6 +33,8 @@ export default function reducer(state = initialState, { type, payload }) {
       return { ...state, list: { ...state.list, [payload.id]: payload } };
     case LOT_UPDATE_CAR_SEARCH_TERM:
       return { ...state, searchTerm: payload };
+    case LOT_CAR_DEPARTED:
+      return { ...state, list: { ...state.list, [payload]: undefined } };
     default:
       return state;
   }

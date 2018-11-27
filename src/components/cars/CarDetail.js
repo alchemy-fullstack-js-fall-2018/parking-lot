@@ -18,6 +18,8 @@ export default class CarDetail extends Component {
         <p>Plate: {car.id}</p>
         <p>State: {car.state}</p>
         <p>Color: {car.color}</p>
+        <button>Arrived</button>
+        <button>Departed</button>
       </Fragment>
     );
   }

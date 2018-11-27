@@ -8,7 +8,8 @@ const initialState = {
       make: 'Honda',
       model: 'Accord',
       color: 'white',
-      state: 'OR'
+      state: 'OR',
+      inLot: false
     },
     DEF456: {
       id: 'DEF456',
