@@ -14,6 +14,7 @@ const Car = ({ cars }) => {
       </tr>
     );
   });
+  
 
   return (
     <Fragment>
