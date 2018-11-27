@@ -11,7 +11,7 @@ exports[`Home component tests Home snapshot 1`] = `
       "entries": Array [
         Object {
           "hash": "",
-          "key": "e6b5wt",
+          "key": "222kd7",
           "pathname": "/",
           "search": "",
           "state": undefined,
@@ -25,7 +25,7 @@ exports[`Home component tests Home snapshot 1`] = `
       "listen": [Function],
       "location": Object {
         "hash": "",
-        "key": "e6b5wt",
+        "key": "222kd7",
         "pathname": "/",
         "search": "",
         "state": undefined,
