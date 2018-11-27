@@ -1,0 +1,13 @@
+#header {
+  border: 1px solid #0F0F0F;
+  padding: 1em;
+  margin: 1em 0;
+  
+  h1 {
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
