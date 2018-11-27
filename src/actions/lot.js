@@ -5,13 +5,13 @@ export const updateLotSearchTerm = searchTerm => ({
 });
 
 export const LOT_CAR_ARRIVED = 'LOT_CAR_ARRIVED';
-export const lotCarArrived = plate => ({
+export const addToLot = plate => ({
   type: LOT_CAR_ARRIVED,
   payload: plate
 });
 
 export const LOT_CAR_DEPARTED = 'LOT_CAR_DEPARTED';
-export const lotCarDeparted = plate => ({
+export const removeFromLot = plate => ({
   type: LOT_CAR_DEPARTED,
   payload: plate
 });

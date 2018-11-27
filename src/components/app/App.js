@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  // Redirect
 } from 'react-router-dom';
 import { ROUTES } from '../../routes/routes';
 import Header from '../header/Header';

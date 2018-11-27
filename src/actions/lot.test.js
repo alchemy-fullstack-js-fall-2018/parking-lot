@@ -2,9 +2,9 @@ import {
   LOT_UPDATE_CAR_SEARCH_TERM,
   updateLotSearchTerm,
   LOT_CAR_ARRIVED,
-  lotCarArrived,
+  addToLot,
   LOT_CAR_DEPARTED,
-  lotCarDeparted
+  removeFromLot
 } from './lot';
 
 describe('lot actions', () => {

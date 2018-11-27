@@ -30,9 +30,10 @@ export default function reducer(state = initialState, { type, payload }) {
     case LOT_UPDATE_CAR_SEARCH_TERM:
       return { ...state, searchTerm: payload };
     case LOT_CAR_ARRIVED:
-      return {};
+      return { ...state, list: { ...state.list, [payload.plate]: payload } };
     case LOT_CAR_DEPARTED:
-      return {};
+      delete state.list[payload.plate];
+      return { ...state, list: state.list };
     default: return state;
   }
 }

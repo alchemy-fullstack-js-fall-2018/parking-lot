@@ -1,9 +1,10 @@
 import React from 'react';
 import { ROUTES } from '../../routes/routes';
+import styles from './Header.css';
 
 export default function Header() {
   return (
-    <header>
+    <header id={styles.header}>
       <h1>Al&#39;s Parking Lot</h1>
       <nav>
         <a href={ROUTES.SEARCH_CARS.path}>Search All Cars</a>
@@ -12,4 +13,4 @@ export default function Header() {
       </nav>
     </header>
   );
-};
+}
