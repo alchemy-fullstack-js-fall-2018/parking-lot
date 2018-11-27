@@ -6,11 +6,12 @@ import {
   // Redirect
 } from 'react-router-dom';
 import { ROUTES } from '../../routes/routes';
+import Header from '../header/Header';
 
 export default function App() {
   return (
     <Fragment>
-      <h1>doing some car stuff</h1>
+      <Header />
       <Router>
         <Switch>
           <Route component={ROUTES.SEARCH_LOT.Component} path={ROUTES.SEARCH_LOT.path} />
@@ -20,7 +21,6 @@ export default function App() {
           <Route component={ROUTES.CAR.Component} path={ROUTES.CAR.path} />
           <Route component={ROUTES.ALL_CARS.Component} path={ROUTES.ALL_CARS.path} />
           <Route component={ROUTES.HOME.Component} path={ROUTES.HOME.path} />
-
         </Switch>
       </Router>
     </Fragment>
