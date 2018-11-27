@@ -8,8 +8,12 @@ export default class CarDetail extends Component {
     carDeparted: PropTypes.func
   };
 
+  handleCarArrival = () => {
+    this.props.carArrived(this.props.car);
+  };
+
   render() {
-    const { car, carArrived, carDeparted } = this.props;
+    const { car, carDeparted } = this.props;
 
     return (
       <Fragment>
@@ -20,7 +24,7 @@ export default class CarDetail extends Component {
         <p>Plate: {car.id}</p>
         <p>State: {car.state}</p>
         <p>Color: {car.color}</p>
-        <button value={car.id} onClick={carArrived}>
+        <button onClick={this.handleCarArrival}>
           Arrived
         </button>
         <button value={car.id} onClick={carDeparted}>

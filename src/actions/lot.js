@@ -1,7 +1,7 @@
 export const LOT_CAR_ARRIVED = 'LOT_CAR_ARRIVED';
-export const lotCarArrived = id => ({
+export const lotCarArrived = car => ({
   type: LOT_CAR_ARRIVED,
-  payload: id
+  payload: car
 });
 
 export const LOT_CAR_DEPARTED = 'LOT_CAR_DEPARTED';

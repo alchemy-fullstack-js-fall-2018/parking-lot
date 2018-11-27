@@ -8,7 +8,7 @@ const mapStateToProps = (state, props) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  carArrived: ({ target }) => dispatch(lotCarArrived(target.value)),
+  carArrived: car => dispatch(lotCarArrived(car)),
   carDeparted: ({ target }) => dispatch(lotCarDeparted(target.value))
 });
 
