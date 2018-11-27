@@ -27,7 +27,9 @@ const fakeCars = Array.apply(null, { length: 80 })
   export default function reducer(state = initialState, action) {
     switch(action.type) {
       case REGISTER_CAR:
-        return { ...state, carList: [...state[action.payload], action.payload] };
+        return { ...state, carList: {
+          ...state.carList, [uuid()]:action.payload
+        }};
       case CAR_UPDATE_CAR_SEARCH_TERM:
         return { ...state, searchTerm: action.payload };
       default:

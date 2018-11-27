@@ -6,7 +6,7 @@ import RegisterCarContainer from './containers/RegisterCarContainer';
 import LotCars from './containers/LotCars';
 import SearchLotCarsContainer from './containers/SearchLotCarsContainer';
 
-export const ROUTES = {
+export default {
   HOME: {
     path: '/',
     Component: Home,
@@ -16,30 +16,30 @@ export const ROUTES = {
     path: '/cars',
     Component: AllCars,
     linkTo: () => '/cars'
-  },
-  CAR_DETAIL: {
-    path: '/cars/:id',
-    Component: CarDetailContainer,
-    linkTo: () => `/cars/${id}`
-  },
-  CAR_SEARCH: {
-    path: '/cars/search',
-    Component: SearchAllCarContainer,
-    linkTo: () => '/cars/search'
-  },
-  REGISTER: {
-    path: '/cars/create',
-    Component: RegisterCarContainer,
-    linkTo: () => '/cars/create'
-  },
-  ALL_LOT: {
-    path: '/lot',
-    Component: LotCars,
-    linkTo: () => '/lot'
-  },
-  LOT_SEARCH: {
-    path: 'lot/search',
-    Component: SearchLotCarsContainer,
-    linkTo: () => '/lot/search'
   }
-}
+  // CAR_DETAIL: {
+  //   path: '/cars/:id',
+  //   Component: CarDetailContainer,
+  //   linkTo: () => `/cars/${id}`
+  // },
+  // CAR_SEARCH: {
+  //   path: '/cars/search',
+  //   Component: SearchAllCarContainer,
+  //   linkTo: () => '/cars/search'
+  // },
+  // REGISTER: {
+  //   path: '/cars/create',
+  //   Component: RegisterCarContainer,
+  //   linkTo: () => '/cars/create'
+  // },
+  // ALL_LOT: {
+  //   path: '/lot',
+  //   Component: LotCars,
+  //   linkTo: () => '/lot'
+  // },
+  // LOT_SEARCH: {
+  //   path: 'lot/search',
+  //   Component: SearchLotCarsContainer,
+  //   linkTo: () => '/lot/search'
+  // }
+};
