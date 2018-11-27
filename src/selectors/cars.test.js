@@ -1,4 +1,4 @@
-import { getCars, getCar, getCarSearchTerm, getCarsBySearch } from './cars';
+import { getCars, getCarSearchTerm, getCarsBySearch } from './cars';
 
 describe('car selectors', () => {
   const state = {

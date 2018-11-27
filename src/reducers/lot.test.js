@@ -46,7 +46,7 @@ describe('lot reducers', () => {
         }
       }
     });
-  })
+  });
 
   it('handles a LOT_CAR_DEPARTED action', () => {
     const departingCar = state.list.abc123;
