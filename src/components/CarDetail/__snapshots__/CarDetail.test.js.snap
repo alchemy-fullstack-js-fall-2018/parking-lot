@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests for Car Detail component renders a CarDetail component 1`] = `
+<div>
+  <h2>
+    Car Detail
+  </h2>
+  <p>
+    <span
+      className="bold"
+    >
+      Plate:
+    </span>
+     
+    ZZZ000
+  </p>
+  <p>
+    <span
+      className="bold"
+    >
+      Description:
+    </span>
+     
+    pink
+     
+    Plymouth
+     
+    Edsel
+  </p>
+  <p>
+    <span
+      className="bold"
+    >
+      Times in lot:
+    </span>
+     
+    2
+  </p>
+  <p>
+    <span
+      className="bold"
+    >
+      Status:
+    </span>
+     
+    Parked
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Car has departed
+  </button>
+</div>
+`;

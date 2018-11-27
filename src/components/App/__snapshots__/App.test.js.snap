@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component tests header snapshot 1`] = `
+Array [
+  <header>
+    <nav
+      className="flexContainer"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+      <a
+        href="/cars/register"
+        onClick={[Function]}
+      >
+        Register Car
+      </a>
+      <a
+        href="/cars/search"
+        onClick={[Function]}
+      >
+        Search All Cars
+      </a>
+      <a
+        href="/lot/search"
+        onClick={[Function]}
+      >
+        Search Cars in Lot
+      </a>
+    </nav>
+    <h1>
+      City Center Parking
+    </h1>
+  </header>,
+  <div>
+    <h2>
+      Welcome!
+    </h2>
+    <p>
+      <a
+        href="/cars"
+        onClick={[Function]}
+      >
+        All Registered Cars
+      </a>
+    </p>
+    <p>
+      <a
+        href="/lot"
+        onClick={[Function]}
+      >
+        All Cars in Lot
+      </a>
+    </p>
+  </div>,
+]
+`;
