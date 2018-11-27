@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterCarForm component renders a component 1`] = `
+<Fragment>
+  <h1>
+    Register a New Car
+  </h1>
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      htmlFor="make"
+    >
+      Make
+    </label>
+    <input
+      id="make"
+      name="make"
+      onChange={[Function]}
+      type="text"
+    />
+    <label
+      htmlFor="model"
+    >
+      Model
+    </label>
+    <input
+      id="model"
+      name="model"
+      onChange={[Function]}
+      type="text"
+    />
+    <label
+      htmlFor="plate"
+    >
+      Plate Info
+    </label>
+    <input
+      id="plate"
+      name="plate"
+      onChange={[Function]}
+      type="text"
+    />
+    <button>
+      Register
+    </button>
+  </form>
+</Fragment>
+`;

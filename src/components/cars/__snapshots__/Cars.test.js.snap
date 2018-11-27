@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cars component matches snapshot 1`] = `
+<table
+  width="100%"
+>
+  <tbody>
+    <tr>
+      <th>
+        Make
+      </th>
+      <th>
+        Model
+      </th>
+      <th>
+        Plate
+      </th>
+    </tr>
+    <Car
+      cars={
+        Array [
+          Object {
+            "make": "Toyota",
+            "model": "Corolla",
+            "plate": "ABC123",
+          },
+        ]
+      }
+    />
+  </tbody>
+</table>
+`;
