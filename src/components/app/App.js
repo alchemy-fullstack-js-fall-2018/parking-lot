@@ -23,6 +23,7 @@ export default function App() {
               path={ROUTES.CAR_DETAIL.path}
               component={ROUTES.CAR_DETAIL.component}
             />
+            <Route path={ROUTES.LOT_CARS.path} component={ROUTES.LOT_CARS.component} />
             <Route path={ROUTES.CARS.path} component={ROUTES.CARS.component} />
             <Route path={ROUTES.HOME.path} component={ROUTES.HOME.component} />
           </Switch>

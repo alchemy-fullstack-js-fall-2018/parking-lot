@@ -1,8 +1,9 @@
+import Home from '../components/home/Home';
 import AllCars from '../containers/cars/AllCars';
 import CarDetail from '../containers/cars/CarDetail';
 import FilteredCars from '../containers/cars/FilteredCars';
 import RegisterCar from '../containers/cars/RegisterCar';
-import Home from '../components/home/Home';
+import LotCars from '../containers/lot/LotCars';
 
 export default {
   HOME: {
@@ -29,5 +30,10 @@ export default {
     path: '/cars/create',
     component: RegisterCar,
     linkTo: () => '/cars/create'
+  },
+  LOT_CARS: {
+    path: '/lot',
+    component: LotCars,
+    linkTo: () => '/lot'
   }
 };
