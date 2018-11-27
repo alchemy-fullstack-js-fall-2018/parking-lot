@@ -3,7 +3,6 @@ import ROUTES from '../../routes/routes';
 import { Link } from 'react-router-dom';
 
 export default function Car({ car }) {
-  console.log('car', car);
   return (
     <Fragment>
       <Link to={ROUTES.CAR_DETAIL.linkPath(car.id)}>

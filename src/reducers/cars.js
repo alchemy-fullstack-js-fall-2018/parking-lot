@@ -12,7 +12,8 @@ const initialState = {
       state: 'WA'
     },
     'JKL101': { make: 'Nissan', model: 'Altima', color: 'red', state: 'WA' }
-  }
+  },
+  totalCars: 4
 };
 
 export default function reducer(state = initialState, { type, payload }) {

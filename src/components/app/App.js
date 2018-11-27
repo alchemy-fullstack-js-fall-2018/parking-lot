@@ -8,6 +8,8 @@ export default function App() {
       <h1>Parking Lot</h1>
       <Router>
         <Switch>
+          <Route path={ROUTES.CARS_SEARCH.path} component={ROUTES.CARS_SEARCH.component} />
+          <Route path={ROUTES.CAR_DETAIL.path} component={ROUTES.CAR_DETAIL.component} />
           <Route path={ROUTES.CARS.path} component={ROUTES.CARS.component} />
         </Switch>
       </Router>
