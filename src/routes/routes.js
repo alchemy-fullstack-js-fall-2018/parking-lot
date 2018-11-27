@@ -1,6 +1,7 @@
 import AllCars from '../containers/cars/AllCars';
 import CarDetail from '../containers/cars/CarDetail';
 import FilteredCars from '../containers/cars/FilteredCars';
+import RegisterCar from '../containers/cars/RegisterCar';
 
 export default {
   CARS: {
@@ -17,5 +18,10 @@ export default {
     path: '/cars/search',
     component: FilteredCars,
     linkPath: () => '/cars/search'
+  },
+  REGISTER_CAR: {
+    path: '/cars/create',
+    component: RegisterCar,
+    linkPath: () => '/cars/create'
   }
 };
