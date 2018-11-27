@@ -24,6 +24,7 @@ export default function App() {
               component={ROUTES.CAR_DETAIL.component}
             />
             <Route path={ROUTES.CARS.path} component={ROUTES.CARS.component} />
+            <Route path={ROUTES.HOME.path} component={ROUTES.HOME.component} />
           </Switch>
         </Fragment>
       </Router>

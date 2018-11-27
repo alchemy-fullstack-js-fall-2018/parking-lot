@@ -2,8 +2,14 @@ import AllCars from '../containers/cars/AllCars';
 import CarDetail from '../containers/cars/CarDetail';
 import FilteredCars from '../containers/cars/FilteredCars';
 import RegisterCar from '../containers/cars/RegisterCar';
+import Home from '../components/home/Home';
 
 export default {
+  HOME: {
+    path: '/',
+    component: Home,
+    linkTo: () => '/'
+  },
   CARS: {
     path: '/cars',
     component: AllCars,

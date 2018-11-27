@@ -9,7 +9,7 @@ const Cars = ({ cars, totalCars }) => {
 
   return (
     <div>
-      <h2>Total Cars: {totalCars}</h2>
+      <h3>Total Cars: {totalCars}</h3>
       {carsComponents}
     </div>
   );

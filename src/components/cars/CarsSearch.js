@@ -4,7 +4,7 @@ import Cars from './Cars';
 const CarsSearch = ({ cars, searchTerm, updateSearchTerm, totalCars }) => {
   return (
     <Fragment>
-      <p>search page</p>
+      <h2>Search for Car By Plate</h2>
       <input value={searchTerm} onChange={updateSearchTerm} />
       <Cars cars={cars} totalCars={totalCars} />
     </Fragment>
