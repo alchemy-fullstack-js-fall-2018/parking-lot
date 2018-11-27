@@ -12,16 +12,16 @@ export default {
   CAR_DETAIL: {
     path: '/cars/:id',
     component: CarDetail,
-    linkPath: id => `/cars/${id}`
+    linkTo: id => `/cars/${id}`
   },
   CARS_SEARCH: {
     path: '/cars/search',
     component: FilteredCars,
-    linkPath: () => '/cars/search'
+    linkTo: () => '/cars/search'
   },
   REGISTER_CAR: {
     path: '/cars/create',
     component: RegisterCar,
-    linkPath: () => '/cars/create'
+    linkTo: () => '/cars/create'
   }
 };
