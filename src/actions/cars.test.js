@@ -1,6 +1,6 @@
 import {
   REGISTER_CAR,
-  registerCar
+  registerCar,
 } from './cars';
 
 describe('cars actions', () => {

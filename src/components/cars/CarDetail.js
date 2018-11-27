@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 
 export default class CarDetail extends Component {
   static propTypes = {
-    car: PropTypes.object
+    car: PropTypes.object,
+    carArrived: PropTypes.func,
+    carDeparted: PropTypes.func
   };
 
   render() {
-    const { car } = this.props;
+    const { car, carArrived, carDeparted } = this.props;
 
     return (
       <Fragment>
@@ -18,8 +20,12 @@ export default class CarDetail extends Component {
         <p>Plate: {car.id}</p>
         <p>State: {car.state}</p>
         <p>Color: {car.color}</p>
-        <button>Arrived</button>
-        <button>Departed</button>
+        <button value={car.id} onClick={carArrived}>
+          Arrived
+        </button>
+        <button value={car.id} onClick={carDeparted}>
+          Departed
+        </button>
       </Fragment>
     );
   }

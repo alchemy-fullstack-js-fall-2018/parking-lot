@@ -9,7 +9,6 @@ const initialState = {
       model: 'Accord',
       color: 'white',
       state: 'OR',
-      inLot: false
     },
     DEF456: {
       id: 'DEF456',
