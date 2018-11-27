@@ -20,4 +20,4 @@ describe('lot selectors', () => {
     expect(lotStatusFalse).toEqual(false);
   });
 
-})
+});
