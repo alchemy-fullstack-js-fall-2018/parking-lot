@@ -1,4 +1,4 @@
-import { LOT_CAR_ARRIVED } from '../actions/lot';
+import { LOT_CAR_ARRIVED, LOT_UPDATE_CAR_SEARCH_TERM } from '../actions/lot';
 
 const initialState = {
   searchTerm: '',
@@ -31,6 +31,8 @@ export default function reducer(state = initialState, { type, payload }) {
   switch(type) {
     case LOT_CAR_ARRIVED:
       return { ...state, list: { ...state.list, [payload.id]: payload } };
+    case LOT_UPDATE_CAR_SEARCH_TERM:
+      return { ...state, searchTerm: payload };
     default:
       return state;
   }
