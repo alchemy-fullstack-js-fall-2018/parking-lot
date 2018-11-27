@@ -6,7 +6,7 @@ const chance = new Chance();
 
 const initialState = {
   searchTerm: '',
-  list: fakeClothes
+  list: cars
 };
 
 export default function reducer(state = initialState, { type, payload }) {
