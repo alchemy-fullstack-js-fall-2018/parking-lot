@@ -81,9 +81,9 @@
   * `Handles `LOT_UPDATE_CAR_SEARCH_TERM`, `LOT_CAR_ARRIVED`, `LOT_CAR_DEPARTED`
 * `lotUse.js`
   * reducer containing lot use state
+  * Handles `LOT_CAR_ARRIVED`
 * `index.js`
   * combine `cars.js`, `lot.js`, `lotUse.js`
-  * Handles `LOT_CAR_ARRIVED`
 
 ## Selectors
 
