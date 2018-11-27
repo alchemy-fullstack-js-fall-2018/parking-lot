@@ -1,7 +1,12 @@
-import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import CarDetail from '../../components/cars/CarDetail';
+import { getCar } from '../../selectors/cars';
 
-export default class CarDetail extends Component {
-  render() {
-    return <h2>Car Detail Page</h2>;
-  }
-}
+const mapStateToProps = (state, props) => ({
+  car: getCar(state, props.match.params.id)
+});
+
+export default connect(
+  mapStateToProps,
+  null
+)(CarDetail);

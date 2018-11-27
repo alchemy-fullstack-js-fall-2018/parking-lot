@@ -11,9 +11,18 @@ export default function App() {
         <Fragment>
           <Header />
           <Switch>
-            <Route path={ROUTES.REGISTER_CAR.path} component={ROUTES.REGISTER_CAR.component} />
-            <Route path={ROUTES.CARS_SEARCH.path} component={ROUTES.CARS_SEARCH.component} />
-            <Route path={ROUTES.CAR_DETAIL.path} component={ROUTES.CAR_DETAIL.component} />
+            <Route
+              path={ROUTES.REGISTER_CAR.path}
+              component={ROUTES.REGISTER_CAR.component}
+            />
+            <Route
+              path={ROUTES.CARS_SEARCH.path}
+              component={ROUTES.CARS_SEARCH.component}
+            />
+            <Route
+              path={ROUTES.CAR_DETAIL.path}
+              component={ROUTES.CAR_DETAIL.component}
+            />
             <Route path={ROUTES.CARS.path} component={ROUTES.CARS.component} />
           </Switch>
         </Fragment>

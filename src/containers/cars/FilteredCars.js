@@ -1,6 +1,10 @@
 import { connect } from 'react-redux';
 import CarsSearch from '../../components/cars/CarsSearch';
-import { getFilteredCars, getSearchTerm, getTotalCars } from '../../selectors/cars';
+import {
+  getFilteredCars,
+  getSearchTerm,
+  getTotalCars
+} from '../../selectors/cars';
 import { carUpdateCarSearchTerm } from '../../actions/cars';
 
 const mapStateToProps = state => ({

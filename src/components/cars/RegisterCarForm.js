@@ -20,7 +20,6 @@ export default class RegisterCarForm extends Component {
 
   handleSubmit = event => {
     const { id, state, make, model, color } = this.state;
-    console.log('event', event);
     event.preventDefault();
     this.props.registerCar({ id, state, make, model, color });
   };

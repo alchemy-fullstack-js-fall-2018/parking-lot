@@ -16,3 +16,10 @@ export const getSearchTerm = state => {
 export const getFilteredCars = state => {
   return getCars(state).filter(car => car.id.includes(getSearchTerm(state)));
 };
+
+export const getCar = (state, id) => {
+  return {
+    id: id,
+    ...state.cars.list[id]
+  };
+};
