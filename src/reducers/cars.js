@@ -1,5 +1,5 @@
 import Chance from 'chance';
-import { UPDATE_CARS_SEARCH_TERM } from '../actions/cars';
+import { UPDATE_CARS_SEARCH_TERM, REGISTER_CAR } from '../actions/cars';
 
 const chance = new Chance();
 
@@ -26,6 +26,8 @@ export default function reducer(state = initialState, { type, payload }) {
   switch(type) {
     case UPDATE_CARS_SEARCH_TERM:
       return { ...state, searchTerm: payload.toUpperCase() };
+    case REGISTER_CAR:
+      return { ...state, list: { ...state.list, [payload.plate]: payload } };
     default:
       return state;
   }
