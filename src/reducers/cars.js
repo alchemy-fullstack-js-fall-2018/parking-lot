@@ -9,14 +9,7 @@ const initialCars = Array.apply(null, { length: 20 })
       length: 6,
       pool: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
     }),
-    make: chance.pickone([
-      'Honda',
-      'Toyota',
-      'Mazda',
-      'Tesla',
-      'Lexus',
-      'Acura'
-    ]),
+    make: chance.pickone(['Honda', 'Toyota', 'Tesla', 'Lexus', 'Acura']),
     model: chance.pickone(['Sedan', 'Crossover', 'Truck', 'Sport', 'Coupe'])
   }))
   .reduce((acc, c) => {
@@ -32,7 +25,7 @@ const initialState = {
 export default function reducer(state = initialState, { type, payload }) {
   switch(type) {
     case UPDATE_CARS_SEARCH_TERM:
-      return { ...state, searchTerm: payload };
+      return { ...state, searchTerm: payload.toUpperCase() };
     default:
       return state;
   }

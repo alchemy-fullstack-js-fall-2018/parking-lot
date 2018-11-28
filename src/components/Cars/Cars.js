@@ -1,19 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Car from './car';
 
 const Cars = ({ cars, totalCars }) => {
-  const carsList = cars.map(car => {
-    return (
-      <li key={car.plate}>
-        {car.plate} - {car.make} - {car.model}
-      </li>
-    );
-  });
 
   return (
     <div>
       <h3>{totalCars} Registered Cars:</h3>
-      <ul>{carsList}</ul>
+      <ul><Car cars={cars} /></ul>
     </div>
   );
 };
