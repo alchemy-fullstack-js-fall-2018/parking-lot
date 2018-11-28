@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
+import { ROUTES } from '../../routes';
 
 export default function Header() {
   return (
-    <div>
-      <h3>Register Your Car</h3>
-      <h3>Search All Cars</h3>
-      <h3>Search the Lot</h3>
-    </div>
+    <Fragment>
+      <h1>Larry&apos;s Pick &apos;n Pull Parking Lot Emporium</h1>
+      <nav>
+        <h4>Register Your Car</h4>
+        <Link to={ROUTES.CAR_SEARCH.linkTo()}>
+          <h4>Search All Cars</h4>
+        </Link>
+        <h4>Search the Lot</h4>
+      </nav>
+    </Fragment>
   );
 }
