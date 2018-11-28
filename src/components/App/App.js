@@ -14,6 +14,7 @@ export default function App() {
       <Header />
       <Router>
         <Switch>
+          <Route path={ROUTES.CAR_SEARCH.path} component={ROUTES.CAR_SEARCH.Component}/>
           <Route path={ROUTES.CARS.path} component={ROUTES.CARS.Component} />
           <Route path={ROUTES.HOME.path} component={ROUTES.HOME.Component} />
         </Switch>
