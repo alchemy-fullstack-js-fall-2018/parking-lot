@@ -3,7 +3,7 @@ export const getCars = state => {
 };
 
 export const getTotalCars = state => {
-  return getCars(state).length;
+  return getCarsFilter(state).length;
 };
 
 export const getCar = (state, plate) => {
