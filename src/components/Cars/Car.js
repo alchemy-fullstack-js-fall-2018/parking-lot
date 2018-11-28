@@ -1,12 +1,14 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import { ROUTES } from '../../routes';
 
 const Car = ({ cars }) => {
 
   const carsList = cars.map(car => {
     return (
       <li key={car.plate}>
-        {car.plate} - {car.make} - {car.model}
+        <Link to={ROUTES.CAR_DETAIL.linkTo(car.plate)}>{car.plate}</Link> - {car.make} - {car.model}
       </li>
     );
   });

@@ -7,7 +7,9 @@ export default function Header() {
     <Fragment>
       <h1>Lazy Larry&apos;s Pick &apos;n Pull Parking Lot Emporium</h1>
       <nav>
-        <h4>Register Your Car</h4>
+        <Link to={ROUTES.REGISTER.linkTo()}>
+          <h4>Register Your Car</h4>
+        </Link>
         <Link to={ROUTES.CAR_SEARCH.linkTo()}>
           <h4>Search All Cars</h4>
         </Link>
