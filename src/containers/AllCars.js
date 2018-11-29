@@ -3,8 +3,7 @@ import Cars from '../components/cars/Cars';
 import { getCars, getCarsBySearch } from '../selectors/cars';
 
 const mapStateToProps = state => ({
-  cars: getCars(state),
-  findCarBySearch: getCarsBySearch(state)
+  cars: getCars(state)
 });
 
 export default connect(

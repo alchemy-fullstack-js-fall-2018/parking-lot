@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <h1>Welcome to David's City Parking Lot</h1>
-      {/* <ul>
+      <ul>
         <li>
           <Link to={ROUTES.ALL_CARS.linkTo()}>All Registered cars</Link>
         </li>
@@ -18,11 +18,11 @@ export default function Home() {
           <Link to={ROUTES.ALL_LOT.linkTo()}>Display all cars in lot
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to={ROUTES.REGISTER.linkTo()}>Register a car
           </Link>
-        </li>
-      </ul> */}
+        </li> */}
+      </ul>
     </div>
   );
 };

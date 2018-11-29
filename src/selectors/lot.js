@@ -1,11 +1,11 @@
 export const getLotCars = state => {
-  return Object.keys(state.cars.carsInLot).map(id => ({
-    id,
-    ...state.cars.carsInLot[id]
+  return Object.keys(state.lot.carsInLot).map(plate => ({
+    plate,
+    ...state.lot.carsInLot[plate]
   }));
 };
 
 
 export const getLotCarsBySearch = state => {
-  return state.cars.searchTerm;
+  return state.lot.searchTerm;
 };

@@ -19,10 +19,16 @@ const fakeCars = Array.apply(null, { length: 80 })
     return acc;
   }, {});
 
-  const initialState = {
-    searchTerm: '',
-    carList: fakeCars
-  };
+const initialState = {
+  searchTerm: '',
+  carList: fakeCars
+};
+
+export const fakeLot = Array.apply(null, { length: 10 })
+.reduce(acc => {
+  acc[uuid()] = chance.car();
+  return acc;
+}, {});
 
   export default function reducer(state = initialState, action) {
     switch(action.type) {

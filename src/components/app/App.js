@@ -10,7 +10,7 @@ export default function App() {
   console.log(ROUTES);
   return (
     <Fragment>
-      <h1>Parking Lot</h1>
+      <h1>Welcome!!!</h1>
       <Header />
       <Router>
         <Switch>
