@@ -19,7 +19,7 @@ export default function App() {
 
           {/* <Route path={ROUTES.CAR_DETAIL.path} component={ROUTES.CAR_DETAIL.Component} /> */}
 
-          {/* <Route path={ROUTES.CAR_SEARCH.path} component={ROUTES.CAR_SEARCH.Component} /> */}
+          <Route path={ROUTES.CAR_SEARCH.path} component={ROUTES.CAR_SEARCH.Component} />
 
           {/* <Route path={ROUTES.REGISTER.path} component={ROUTES.REGISTER.Component} /> */}
 
