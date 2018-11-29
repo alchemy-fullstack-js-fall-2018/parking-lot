@@ -17,21 +17,21 @@ export default {
     Component: AllCars,
     linkTo: () => '/cars'
   },
-  // CAR_DETAIL: {
-  //   path: '/cars/:id',
-  //   Component: CarDetailContainer,
-  //   linkTo: () => `/cars/${id}`
-  // },
+  CAR_DETAIL: {
+    path: '/cars/:id',
+    Component: CarDetailContainer,
+    linkTo: id => `/cars/${id}`
+  },
   CAR_SEARCH: {
     path: '/cars/search',
     Component: SearchAllCarContainer,
     linkTo: () => '/cars/search'
   },
-  // REGISTER: {
-  //   path: '/cars/create',
-  //   Component: RegisterCarContainer,
-  //   linkTo: () => '/cars/create'
-  // },
+  REGISTER: {
+    path: '/cars/create',
+    Component: RegisterCarContainer,
+    linkTo: () => '/cars/create'
+  },
   ALL_LOT: {
     path: '/lot',
     Component: LotCars,

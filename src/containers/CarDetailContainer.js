@@ -4,6 +4,7 @@ import { lotCarArrived, lotCarDeparted } from '../actions/lotAction'
 import { getCars } from '../selectors/cars';
 import { getTimesInLot } from '../selectors/lotUse';
 
+
 const mapStateToProps = state => ({
   cars: getCars(state),
   lotUsage: getTimesInLot(state),

@@ -1,11 +1,12 @@
-// import { connect } from 'react-redux';
-// import RegisterCarForm from '../components/registerCarForm/RegisterCarForm';
-// import { registerCar } from '../actions/carActions';
+import { connect } from 'react-redux';
+import RegisterCarForm from '../components/registerCarForm/RegisterCarForm';
+import { registerCar } from '../actions/carActions';
 
-// const mapStateToProps = state => ({
-//   registerCar: RegisterCarForm(state)
-// });
+const mapDispatchToProps = dispatch => ({
+  registerCar: ( make, model, plate ) => dispatch(registerCar(make, model, plate))
+});
 
-// export default connect(
-//   mapStateToProps
-// )(RegisterCarForm)
+export default connect(
+  () => ({}),
+  mapDispatchToProps
+)(RegisterCarForm)
