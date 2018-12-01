@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CarForm /> renders 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <styled.div>
+    <label
+      htmlFor="plate"
+    >
+      Plate
+    </label>
+    <input
+      name="plate"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      htmlFor="make"
+    >
+      Make
+    </label>
+    <input
+      name="make"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      htmlFor="model"
+    >
+      Model
+    </label>
+    <input
+      name="model"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </styled.div>
+  <button
+    type="submit"
+  >
+    Register
+  </button>
+</form>
+`;

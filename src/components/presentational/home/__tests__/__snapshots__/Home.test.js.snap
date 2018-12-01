@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> renders 1`] = `
+<section>
+  <h2>
+    Welcome to Car Trader's Emporium
+  </h2>
+  <p>
+    We have all the cars you will ever need!
+  </p>
+</section>
+`;

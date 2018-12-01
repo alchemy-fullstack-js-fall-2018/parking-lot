@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CarDetail /> renders 1`] = `
+<div>
+  <p>
+    plate: 
+    abcdef
+  </p>
+  <p>
+    make: 
+    Ford
+  </p>
+  <p>
+    model: 
+    F150
+  </p>
+  <p>
+    currently in lot: 
+    false
+  </p>
+  <p>
+    times in lot: 
+    5
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Add to lot
+  </button>
+</div>
+`;

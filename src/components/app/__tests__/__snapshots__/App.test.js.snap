@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "accent": "rgb(173, 38, 36)",
+      "darksecondary": "rgb(107, 48, 13)",
+      "primary": "rgb(0, 56, 130)",
+      "secondary": "rgb(247, 181, 18)",
+    }
+  }
+>
+  <BrowserRouter>
+    <HelmetWrapper
+      defer={true}
+      encodeSpecialCharacters={true}
+    >
+      <title>
+        Cars
+      </title>
+    </HelmetWrapper>
+    <GlobalStyleComponent
+      suppressMultiMountWarning={false}
+    />
+    <Header />
+    <Switch>
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/about/"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/home/"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/cars/"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/lot/"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/cars/new"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/cars/search"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/lot/search"
+      />
+      <Route
+        component={[Function]}
+        path="/cars/:id"
+      />
+      <Redirect
+        push={false}
+        to="/home/"
+      />
+    </Switch>
+    <Footer />
+  </BrowserRouter>
+</ThemeProvider>
+`;

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CarCard /> renders 1`] = `
+<styled.div>
+  <p>
+    plate: 
+    abcdef
+  </p>
+  <p>
+    make: 
+    Ford
+  </p>
+  <p>
+    model: 
+    F150
+  </p>
+  <Link
+    replace={false}
+    to="/cars/123-123-123-123"
+  >
+    See more information
+  </Link>
+</styled.div>
+`;

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CarList /> renders 1`] = `
+<div>
+  <styled.div>
+    <CarCard
+      id="123-123-123-123"
+      key="abcdef"
+      make="Ford"
+      model="F150"
+      plate="abcdef"
+    />
+    <CarCard
+      id="321-321-321-321"
+      key="xyzabc"
+      make="Chevy"
+      model="S10"
+      plate="xyzabc"
+    />
+  </styled.div>
+</div>
+`;

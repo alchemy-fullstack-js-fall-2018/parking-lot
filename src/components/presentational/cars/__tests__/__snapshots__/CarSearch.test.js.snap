@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CarSearch /> renders 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      htmlFor="q"
+    >
+      Search
+    </label>
+    <input
+      id="q"
+      name="q"
+      type="text"
+    />
+    <button
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+  <CarList
+    cars={
+      Array [
+        Object {
+          "id": "123-123-123-123",
+          "inLot": false,
+          "lotUses": 5,
+          "make": "Ford",
+          "model": "F150",
+          "plate": "abcdef",
+        },
+        Object {
+          "id": "321-321-321-321",
+          "inLot": true,
+          "lotUses": 8,
+          "make": "Chevy",
+          "model": "S10",
+          "plate": "xyzabc",
+        },
+      ]
+    }
+  />
+</div>
+`;
