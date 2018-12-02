@@ -2,14 +2,14 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import ROUTES from '../../routes';
 
-const carDetail = ({ car, inLot, addToLot, removeFromLot, lotUsage }) => {
+const carDetail = ({ car, inLot, lotCarArrived, lotCarDeparted, lotUsage }) => {
 
   const { make, model, plate } = car;
 
   const handleClick = event => {
     event.preventDefault();
-    if(!inLot) addToLot(car)
-    else removeFromLot(plate)
+    if(!inLot) lotCarArrived(car)
+    else lotCarDeparted(plate)
   }
 
   const status = inLot ? 'Yes' : 'No';
@@ -48,6 +48,8 @@ const carDetail = ({ car, inLot, addToLot, removeFromLot, lotUsage }) => {
 carDetail.PropTypes = {
   car: PropTypes.object.isRequired,
   inLot: PropTypes.bool.isRequired,
+  lotCarArrived: PropTypes.func.isRequired,
+  lotCarDeparted: PropTypes.func.isRequired,
   lotUsage: PropTypes.number.isRequired
 }
 

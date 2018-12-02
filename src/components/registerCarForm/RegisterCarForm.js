@@ -28,20 +28,20 @@ export default class RegisterCarForm extends PureComponent {
   render() {
 
     <Fragment>
-      <form>
+      <form onSubmit={this.onSubmit}>
         <label>
           Make:
-          <input type="text" value={this.state.make} onChange={this.handleChange}/>
+          <input id="make" name="make" type="text" onChange={this.handleChange}/>
         </label>
         <label>
           Model:
-          <input type="text" value={this.state.model} onChange={this.handleChange}/>
+          <input id="model" name="model" type="text" onChange={this.handleChange}/>
         </label>
         <label>
           Plate:
-          <input type="text" value={this.state.plate} onChange={this.handleChange}/>
+          <input id="plate" name="plate" type="text" onChange={this.handleChange}/>
         </label>
-        <button onClick={this.onSubmit}>Submit Registration</button>
+        <button>Submit Registration</button>
       </form>
     </Fragment>
   };

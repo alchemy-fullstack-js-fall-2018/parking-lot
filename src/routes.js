@@ -28,9 +28,9 @@ export default {
     linkTo: () => '/cars/search'
   },
   REGISTER: {
-    path: '/cars/create',
+    path: '/cars/register',
     Component: RegisterCarContainer,
-    linkTo: () => '/cars/create'
+    linkTo: () => '/cars/register'
   },
   ALL_LOT: {
     path: '/lot',
