@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ROUTES from '../../routes';
+import { ROUTES } from '../../routes';
 
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to David's City Parking Lot</h1>
+      <h1>Welcome to </h1>
       <ul>
         <li>
           <Link to={ROUTES.ALL_CARS.linkTo()}>All Registered cars</Link>

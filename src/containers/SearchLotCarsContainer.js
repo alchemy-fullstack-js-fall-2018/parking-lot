@@ -1,12 +1,17 @@
 import { connect } from 'react-redux';
-import SearchCar from '../components/searchCar/SearchCar';
+import SearchCars from '../components/searchCar/SearchCar';
 import { getLotCars, getLotCarsBySearch  } from '../selectors/lot';
 import { lotUpdateCarSearchTerm } from '../actions/lotAction';
 
 const mapStateToProps = state => ({
-  getLotCarsbySearch: getLotCarsBySearch(state),
+  searchTerm: getLotCarsBySearch(state),
+  car: getLotCars(state)
+});
+
+const mapDispatchToProps = dispatch => ({
+  updateSearchTerm: ({ target }) => dispatch(lotUpdateCarSearchTerm(target.value))
 });
 
 export default connect(
-  mapStateToProps
-)(SearchCar);
+  mapStateToProps,
+  mapDispatchToProps)(SearchCars);

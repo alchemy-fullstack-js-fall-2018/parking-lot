@@ -1,13 +1,14 @@
 import { connect } from 'react-redux';
 import CarDetail from '../components/carDetails/CarDetail';
-import { lotCarArrived, lotCarDeparted } from '../actions/lotAction'
 import { getCars } from '../selectors/cars';
 import { getTimesInLot } from '../selectors/lotUse';
+import { getLotStatus } from '../selectors/lot';
+import { lotCarArrived, lotCarDeparted } from '../actions/lotAction'
 
-
-const mapStateToProps = state => ({
-  cars: getCars(state),
-  lotUsage: getTimesInLot(state),
+const mapStateToProps = ( state, props) => ({
+  car: getCars(state, props.match.params.id),
+  inLot: getLotStatus(state, props.match.params.id),
+  lotUsage: getTimesInLot(state, props.match.params.id)
 });
 
 const mapDispatchToProps = dispatch => ({

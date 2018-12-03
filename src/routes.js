@@ -6,7 +6,7 @@ import RegisterCarContainer from './containers/RegisterCarContainer';
 import LotCars from './containers/LotCars';
 import SearchLotCarsContainer from './containers/SearchLotCarsContainer';
 
-export default {
+export const ROUTES = {
   HOME: {
     path: '/',
     Component: Home,

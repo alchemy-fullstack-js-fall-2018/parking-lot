@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import ROUTES from '../../routes';
+import { ROUTES } from '../../routes';
 
 const carDetail = ({ car, inLot, lotCarArrived, lotCarDeparted, lotUsage }) => {
 
