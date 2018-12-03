@@ -4,8 +4,9 @@ import { ROUTES } from '../../routes';
 
 export default function SearchCars({ cars, searchTerm, updateSearchTerm }) {
 
+
   const carDetails = cars.map(car => {
-    const { make, model, plate } = cars;
+    const { make, model, plate } = car;
     return (
       <tr key={plate}>
         <th>{make}</th>
@@ -14,6 +15,8 @@ export default function SearchCars({ cars, searchTerm, updateSearchTerm }) {
       </tr>
     );
   });
+
+
 
   return(
     <Fragment>

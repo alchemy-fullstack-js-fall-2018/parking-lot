@@ -12,8 +12,9 @@ const carDetail = ({ car, inLot, lotCarArrived, lotCarDeparted, lotUsage }) => {
     else lotCarDeparted(plate)
   }
 
+  console.log(inLot);
   const status = inLot ? 'Yes' : 'No';
-  const addRemoveButton = inlot ? 'Remove' : 'Add';
+  const addRemoveButton = inLot ? 'Remove' : 'Add';
 
   return(
     <Fragment>
@@ -45,7 +46,7 @@ const carDetail = ({ car, inLot, lotCarArrived, lotCarDeparted, lotUsage }) => {
   );
 }
 
-carDetail.PropTypes = {
+carDetail.propTypes = {
   car: PropTypes.object.isRequired,
   inLot: PropTypes.bool.isRequired,
   lotCarArrived: PropTypes.func.isRequired,

@@ -34,7 +34,7 @@ export const fakeLot = Array.apply(null, { length: 10 })
     switch(action.type) {
       case REGISTER_CAR:
         return { ...state, carList: {
-          ...state.carList, [uuid()]:action.payload
+          ...state.carList, [action.payload.plate]:action.payload
         }};
       case CAR_UPDATE_CAR_SEARCH_TERM:
         return { ...state, searchTerm: action.payload };

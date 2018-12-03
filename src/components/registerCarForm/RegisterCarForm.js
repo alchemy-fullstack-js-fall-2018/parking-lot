@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 export default class RegisterCarForm extends PureComponent {
 
-  static PropTypes = {
-    registerCar: PropTypes.array.isRequired
+  static propTypes = {
+    registerCar: PropTypes.func.isRequired
   };
 
   state = {
@@ -26,6 +26,8 @@ export default class RegisterCarForm extends PureComponent {
   };
 
   render() {
+    return(
+
 
     <Fragment>
       <form onSubmit={this.onSubmit}>
@@ -44,5 +46,6 @@ export default class RegisterCarForm extends PureComponent {
         <button>Submit Registration</button>
       </form>
     </Fragment>
+    )
   };
 };

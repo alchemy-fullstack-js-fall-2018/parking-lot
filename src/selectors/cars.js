@@ -8,3 +8,7 @@ export const getCars = state => {
 export const getCarsBySearch = state => {
   return state.cars.searchTerm;
 }
+
+export const getCar = (state, id) => {
+  return state.cars.carList[id];
+}
