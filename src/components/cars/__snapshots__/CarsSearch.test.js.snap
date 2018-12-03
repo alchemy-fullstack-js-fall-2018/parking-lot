@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CarsSearch snapshot matches previous snapshot 1`] = `
+<Fragment>
+  <h2>
+    Search for Car By Plate
+  </h2>
+  <input
+    onChange={[MockFunction]}
+    value="ABC"
+  />
+  <Cars
+    cars={
+      Array [
+        Object {
+          "color": "white",
+          "id": "ABC123",
+          "make": "Honda",
+          "model": "Accord",
+          "state": "OR",
+        },
+        Object {
+          "color": "silver",
+          "id": "DEF456",
+          "make": "Toyota",
+          "model": "Camry",
+          "state": "OR",
+        },
+        Object {
+          "color": "blue",
+          "id": "GHI789",
+          "make": "Hyundai",
+          "model": "Elantra",
+          "state": "WA",
+        },
+      ]
+    }
+    totalCars={4}
+  />
+</Fragment>
+`;

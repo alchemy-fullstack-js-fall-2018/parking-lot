@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cars snapshot matches previous snapshot 1`] = `
+<div>
+  <h3>
+    Total Cars: 
+    4
+  </h3>
+  <Car
+    car={
+      Object {
+        "color": "white",
+        "id": "ABC123",
+        "make": "Honda",
+        "model": "Accord",
+        "state": "OR",
+      }
+    }
+    key="ABC123"
+  />
+  <Car
+    car={
+      Object {
+        "color": "silver",
+        "id": "DEF456",
+        "make": "Toyota",
+        "model": "Camry",
+        "state": "OR",
+      }
+    }
+    key="DEF456"
+  />
+  <Car
+    car={
+      Object {
+        "color": "blue",
+        "id": "GHI789",
+        "make": "Hyundai",
+        "model": "Elantra",
+        "state": "WA",
+      }
+    }
+    key="GHI789"
+  />
+</div>
+`;

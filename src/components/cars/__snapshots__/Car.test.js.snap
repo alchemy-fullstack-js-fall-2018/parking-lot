@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Car snapshot matches previous snapshot 1`] = `
+<Fragment>
+  <Link
+    replace={false}
+    to="/cars/ABC123"
+  >
+    Honda
+     
+    Accord
+  </Link>
+  <p>
+    Plate: 
+    ABC123
+  </p>
+  <p>
+    State: 
+    OR
+  </p>
+  <p>
+    Color: 
+    white
+  </p>
+</Fragment>
+`;

@@ -1,7 +1,7 @@
 export const getCars = state => {
   return Object.keys(state.cars.list).map(id => ({
     id,
-    ...state.cars.list[id]
+    ...state.cars.list[id],
   }));
 };
 
@@ -22,4 +22,8 @@ export const getCar = (state, id) => {
     id: id,
     ...state.cars.list[id]
   };
+};
+
+export const getLotUse = (state, id) => {
+  return state.lotUse[id];
 };

@@ -5,7 +5,8 @@ export default class CarDetail extends Component {
   static propTypes = {
     car: PropTypes.object,
     carArrived: PropTypes.func,
-    carDeparted: PropTypes.func
+    carDeparted: PropTypes.func,
+    lotUse: PropTypes.number
   };
 
   handleCarArrival = () => {

@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterCarForm snapshot matches previous snapshot 1`] = `
+<Fragment>
+  <h2>
+    Registration Form
+  </h2>
+  <form
+    onSubmit={[Function]}
+  >
+    <label>
+      Licence Plate:
+      <input
+        name="id"
+        onChange={[Function]}
+        value=""
+      />
+    </label>
+    <label>
+      Registration State:
+      <input
+        name="state"
+        onChange={[Function]}
+        value=""
+      />
+    </label>
+    <label>
+      Make:
+      <input
+        name="make"
+        onChange={[Function]}
+        value=""
+      />
+    </label>
+    <label>
+      Model:
+      <input
+        name="model"
+        onChange={[Function]}
+        value=""
+      />
+    </label>
+    <label>
+      Color:
+      <input
+        name="color"
+        onChange={[Function]}
+        value=""
+      />
+    </label>
+    <button>
+      Submit
+    </button>
+  </form>
+</Fragment>
+`;
