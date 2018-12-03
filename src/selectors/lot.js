@@ -16,7 +16,7 @@ export const getFilteredCars = state => {
 export const getCar = (state, id) => {
   return {
     id: id,
-    ...state.cars.list[id]
+    ...state.lot.list[id]
   };
 };
 
