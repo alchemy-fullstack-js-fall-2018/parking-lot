@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CarDetail snapshot matches previous snapshot 1`] = `
+<Fragment>
+  <h2>
+    Car Detail Page
+  </h2>
+  <h3>
+    Honda
+     
+    Accord
+  </h3>
+  <p>
+    Plate: 
+    ABC123
+  </p>
+  <p>
+    State: 
+    OR
+  </p>
+  <p>
+    Color: 
+    white
+  </p>
+  <p>
+    Lot Use: 
+    3
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Arrived
+  </button>
+  <button
+    onClick={[MockFunction]}
+    value="ABC123"
+  >
+    Departed
+  </button>
+</Fragment>
+`;
