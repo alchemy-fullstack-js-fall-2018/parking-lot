@@ -14,7 +14,7 @@ export default class CarDetail extends Component {
   };
 
   render() {
-    const { car, carDeparted } = this.props;
+    const { car, carDeparted, lotUse } = this.props;
 
     return (
       <Fragment>
@@ -25,6 +25,7 @@ export default class CarDetail extends Component {
         <p>Plate: {car.id}</p>
         <p>State: {car.state}</p>
         <p>Color: {car.color}</p>
+        <p>Lot Use: {lotUse}</p>
         <button onClick={this.handleCarArrival}>
           Arrived
         </button>

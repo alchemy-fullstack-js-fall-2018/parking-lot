@@ -1,9 +1,8 @@
 import React, { Fragment, Component } from 'react';
 import PropTypes from 'prop-types';
-
 export default class RegisterCarForm extends Component {
   static propTypes = {
-    registerCar: PropTypes.func
+    registerCar: PropTypes.func.isRequired
   };
 
   state = {

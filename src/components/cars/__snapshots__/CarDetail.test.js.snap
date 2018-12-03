@@ -22,6 +22,10 @@ exports[`CarDetail snapshot matches previous snapshot 1`] = `
     Color: 
     white
   </p>
+  <p>
+    Lot Use: 
+    3
+  </p>
   <button
     onClick={[Function]}
   >
