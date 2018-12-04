@@ -1,0 +1,16 @@
+#header {
+  background-color: grey;
+  padding: 25px;
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
