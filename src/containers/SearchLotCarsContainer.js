@@ -5,7 +5,7 @@ import { lotUpdateCarSearchTerm } from '../actions/lotAction';
 
 const mapStateToProps = state => ({
   searchTerm: getLotCarsBySearch(state),
-  car: getLotCars(state)
+  cars: getLotCars(state)
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -28,7 +28,6 @@ export default class RegisterCarForm extends PureComponent {
   render() {
     return(
 
-
     <Fragment>
       <form onSubmit={this.onSubmit}>
         <label>

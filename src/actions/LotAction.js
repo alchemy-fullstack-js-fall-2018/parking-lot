@@ -5,13 +5,9 @@ export const lotUpdateCarSearchTerm = searchTerm => ({
 });
 
 export const LOT_CAR_ARRIVED = 'LOT_CAR_ARRIVED';
-export const lotCarArrived = ( make, model, plate ) => ({
+export const lotCarArrived = ( car ) => ({
   type: LOT_CAR_ARRIVED,
-  payload: {
-    make,
-    model,
-    plate
-  }
+  payload: car
 });
 
 export const LOT_CAR_DEPARTED = 'LOT_CAR_DEPARTED';

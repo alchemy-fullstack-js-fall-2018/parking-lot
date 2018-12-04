@@ -15,7 +15,8 @@ chance.mixin({
 
 const fakeCars = Array.apply(null, { length: 80 })
   .reduce(acc => {
-    acc[uuid()] = chance.car();
+    const car = chance.car();
+    acc[car.plate] = car;
     return acc;
   }, {});
 
@@ -26,7 +27,8 @@ const initialState = {
 
 export const fakeLot = Array.apply(null, { length: 10 })
 .reduce(acc => {
-  acc[uuid()] = chance.car();
+  const car = chance.car();
+  acc[car.plate] = car;
   return acc;
 }, {});
 

@@ -6,17 +6,15 @@ export default function SearchCars({ cars, searchTerm, updateSearchTerm }) {
 
 
   const carDetails = cars.map(car => {
-    const { make, model, plate } = car;
+    const { make, model, plate, id } = car;
     return (
-      <tr key={plate}>
+      <tr key={id}>
         <th>{make}</th>
         <th>{model}</th>
-        <th><Link to={ROUTES.CAR_DETAIL.linkTo(plate)}>{plate}</Link></th>
+        <th><Link to={ROUTES.CAR_DETAIL.linkTo(id)}>{plate}</Link></th>
       </tr>
     );
   });
-
-
 
   return(
     <Fragment>
